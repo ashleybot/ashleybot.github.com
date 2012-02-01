@@ -5,6 +5,17 @@ title: ashleygreer
 
 
 <div class="one-third column">
+	<h3>Thoughts</h3>
+	<p>Some random ideas.</p>
+	<ul class="posts">
+    {% for post in site.posts %}
+      <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
+    {% endfor %}
+  </ul>
+</div>
+<div class="two-thirds column">  
+	<img src="http://www.gravatar.com/avatar/fd5460bdc6504b7ba0f46b3512f4f36e?s=400">
+	
 	<h3>About</h3>
 	<p>
 		I'm a human factors student and programmer living in Lexington, KY.  
@@ -18,19 +29,5 @@ title: ashleygreer
 	<p>
 	  Occasionally, I'll <a href="http://stackexchange.com/users/86814/ashley?tab=accounts">answer questions related to programming and user experience</a>.
 	</p>
-</div>
-<div class="one-third column">
-	<h3>Thoughts</h3>
-	<p>Some random ideas.</p>
-	<ul class="posts">
-    {% for post in site.posts %}
-      <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
-    {% endfor %}
-  </ul>
-</div>
-<div class="one-third column">
-	<h3>Contact</h3>
-	<p>
-		<a href="http://twitter.com/ashleygreer">Twitter</a>
-	</p>
+
 </div>
