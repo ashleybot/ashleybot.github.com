@@ -3,6 +3,10 @@ layout: main
 title: Being Impetuous
 ---
 
-<div>
-h2. {{ page.title }}
+<div class="one columns">
+	<h2>{{ page.title }}</h2>
+	
+	<p>
+		This is my hello world post. They're often boring and useless, so just go check out <a href="https://github.com/">github</a>, <a href="http://jekyllrb.com/">jekyll</a>, and <a href="http://www.getskeleton.com/">skeleton boilerplate</a>.
+	</p>
 </div>
