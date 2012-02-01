@@ -3,4 +3,6 @@ layout: main
 title: Being Impetuous
 ---
 
+<div>
 h2. {{ page.title }}
+</div>
