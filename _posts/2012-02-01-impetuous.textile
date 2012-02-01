@@ -1,0 +1,6 @@
+---
+layout: main
+title: Being Impetuous
+---
+
+h2. {{ page.title }}

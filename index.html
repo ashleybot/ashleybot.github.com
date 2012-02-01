@@ -3,10 +3,7 @@ layout: main
 title: ashleygreer
 ---
 
-<div class="sixteen columns">
-	<h1 class="remove-bottom" style="margin-top: 40px">Ashley Greer</h1>
-	<hr />
-</div>
+
 <div class="one-third column">
 	<h3>About</h3>
 	<p>
@@ -23,12 +20,13 @@ title: ashleygreer
 	</p>
 </div>
 <div class="one-third column">
-	<h3>Under Construction</h3>
-	<p>This site will soon become:</p>
-	<ul class="square">
-		<li><strong>My Sandbox</strong>: See what I'm currently working on.</li>
-		<li><strong>My Portfolio</strong>: See what I've done.</li>
-	</ul>
+	<h3>Thoughts</h3>
+	<p>Some random ideas.</p>
+	<ul class="posts">
+    {% for post in site.posts %}
+      <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
+    {% endfor %}
+  </ul>
 </div>
 <div class="one-third column">
 	<h3>Contact</h3>
