@@ -1,0 +1,19 @@
+---
+layout: main
+title: Achievements in Visual Studio
+---
+
+
+<div class="one columns">
+	<h2>{{ page.title }}</h2>
+	
+	<p>
+		A few weeks ago a friend sent me a link to this Visual Studio plugin which attempts to gamify programming.
+	</p>
+	<p>
+		Several of the goals are just plain silly, but I really like this idea.  There's an api, so look for something more
+		from me in the future on this.
+	</p>
+	
+	<script src="http://video.ch9.ms/widgets/VSachievements.min.js?user=ashleygreer&showMainTitle=false" id="ch9VSachievements" defer="defer"></script>
+</div>
