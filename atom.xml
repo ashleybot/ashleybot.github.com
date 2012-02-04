@@ -5,10 +5,10 @@ layout: nil
 <feed xmlns="http://www.w3.org/2005/Atom">
  
  <title>ashleygreer</title>
- <link href="http://ashleygreer.com/atom.xml" rel="self"/>
- <link href="http://ashleygreer.com/"/>
+ <link href="http://www.ashleygreer.com/atom.xml" rel="self"/>
+ <link href="http://www.ashleygreer.com/"/>
  <updated>{{ site.time | date_to_xmlschema }}</updated>
- <id>http://ashleygreer.com/</id>
+ <id>http://www.ashleygreer.com/</id>
  <author>
    <name>Ashley Greer</name>
    <email>ashley@ashleygreer.com</email>
@@ -17,9 +17,9 @@ layout: nil
  {% for post in site.posts %}
  <entry>
    <title>{{ post.title }}</title>
-   <link href="http://ashleygreer.com{{ post.url }}"/>
+   <link href="http://www.ashleygreer.com{{ post.url }}"/>
    <updated>{{ post.date | date_to_xmlschema }}</updated>
-   <id>http://ashleygreer.com{{ post.id }}</id>
+   <id>http://www.ashleygreer.com{{ post.id }}</id>
    <summary>fuuuuuu</summary>
  </entry>
  {% endfor %}
