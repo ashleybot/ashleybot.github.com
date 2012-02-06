@@ -5,6 +5,7 @@ title: Holy Wayfinding, Batman!
 
 <div class="sixteen columns">
 	<h2>{{ page.title }}</h2>
+	
 	<p>
 		A benefit of living in Kentucky is its beautiful <a href="http://parks.ky.gov/" target="_new">state parks</a>, federal forest preserves, and local parks and sanctuaries.
 	</p>
@@ -42,6 +43,6 @@ title: Holy Wayfinding, Batman!
 		To be fair, the actual map that is provided at the sanctuary is slightly different, but they both have common problems related to cognition.
 	</p>
 	<p>
-		In my next post, I'll make some suggestions based on my heuristic analysis.
+		In my next post, I'll make some suggestions based on my heuristic analysis.  &raquo; <a href="">Read Part 2 now</a>.
 	</p>
 </div>

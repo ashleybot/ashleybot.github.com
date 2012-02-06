@@ -1,0 +1,48 @@
+---
+layout: main
+title: The Grand Abyss
+---
+
+<div class="sixteen columns">
+	<h2>{{ page.title }}</h2>
+	<div class="row clearfix">
+		<div class="seven columns alpha">
+			Yesterday, I lost my car key somewhere between 1.5 hours and 5 miles of forest.
+			
+			After the initial oh-shit gut reaction, my thoughts went to which search algorithm I could employ to most efficiently retrace my steps and find my key.
+			
+			<blockquote>
+				Hurl yourself into the grand abyss.
+				<cite>Unknown</cite>
+			</blockquote>
+			
+			I knew I had the key about 1 mile into the beginning of the hike and I had three traversal options:
+			<ol>
+				<li>Start from the beginning</li>
+				<li>From the end</li>
+				<li>Or use the many artery trails to subdivide the main trail</li>
+			</ol>
+			
+			At this point, the avid reader is noticing an important detail which changes the entire story.
+			
+		</div>
+		<div class="eight columns offset-by-one omega">
+			<img src="http://dl.dropbox.com/u/15031981/Blog/GrandAbyss.jpg" style="width:367px;height:475px;" alt="Swinging in the abyss." />
+		</div>
+	</div>
+	<div class="row clearfix">
+		<div class="ten columns alpha">
+			<h5>There are other hikers on the trail.</h5>
+			
+			
+			I didn't realize this until my key was miraculously returned to me. The kind couple who gave me the key were given the key by another couple (who were given the key by another couple - jk).
+			
+			I needed a packet routing algorithm all along!  Silly me.
+	</div>
+	<div class="five columns offset-by-one omega">
+			<blockquote>
+				It's not as much abyss as it is grand.
+				<cite>Unknown</cite>
+			</blockquote>
+	</div>
+</div>
