@@ -18,7 +18,9 @@ title: Holy Wayfinding, Batman!
 </div>
 
 <div class="four columns">
-	<strong>Some things to note:</strong>
+	<p>
+		<strong>Some things to note:</strong>
+	</p>
 	<ul>
 		<li>
 			<strong>The Legend</strong>
@@ -43,6 +45,6 @@ title: Holy Wayfinding, Batman!
 		To be fair, the actual map that is provided at the sanctuary is slightly different, but they both have common problems related to cognition.
 	</p>
 	<p>
-		In my next post, I'll make some suggestions based on my heuristic analysis.  &raquo; <a href="">Read Part 2 now</a>.
+		In a future post, I'll make some suggestions based on my quick heuristic analysis.
 	</p>
 </div>
