@@ -1,0 +1,72 @@
+---
+layout: d3
+title: The Golden Gate
+---
+
+<div class="one columns">
+	<h2>{{ page.title }}</h2>
+	
+	<p>
+		I'm really excited about this post.  It combines several things I enjoy: outdoor activities, data visualization, Ruby, and Javascript.
+	</p>
+	<p>
+		This weekend I ran in the Golden Gate Trail Run half marathon.  It was the longest distance I have ever ran and it was nothing short of amazing.
+	</p>
+	<p>
+		The results are posted online, but are a little hard to consume.  So, I scrubbed the page with a fast little Ruby parser called Nokogiri, saved the results as XML, and used XSLT to display as HTML under the "Raw" tab. [Insert joke about web developers fixing things that have already been fixed here.]
+	</p>
+	
+	<ul class="tabs">
+	  <!-- Give href an ID value of corresponding "tabs-content" <li>'s -->
+	  <li><a class="active" href="#simple">Simple</a></li>
+	  <li><a href="#lightweight">Lightweight</a></li>
+	  <li><a href="#raw">Raw</a></li>
+	</ul>
+
+	<!-- Standard <ul> with class of "tabs-content" -->
+	<ul class="tabs-content">
+	  <!-- Give ID that matches HREF of above anchors -->
+	  <li class="active" id="simple">The tabs are clean and simple unordered-list markup and basic CSS.</li>
+	  <li id="lightweight">The tabs are cross-browser, but don't need a ton of hacky CSS or markup.</li>
+	  <li id="raw">
+	  	<p>
+	  		Raw race results.
+	  	</p>
+			<script type="text/javascript">
+				var xmlhttp;
+				if (window.XMLHttpRequest) {// code for IE7+, Firefox, Chrome, Opera, Safari
+			  	xmlhttp=new XMLHttpRequest();
+			  }
+				else {// code for IE6, IE5
+			  	xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+			  }
+			  xmlhttp.open("GET","/data/GoldenGate2012Results.xml",false);
+				xmlhttp.send();
+				xmlDoc=xmlhttp.responseXML; 
+				document.write("<table style='border:1px solid #333;'>");
+				var x = xmlDoc.getElementsByTagName("runner");
+				
+				document.write("<tr><th>Place</th><th>Gender</th><th>Age</th><th>Hometown</th><th>Time</th><th>Pace</th></tr>");
+				for (i=0;i<x.length;i++) {
+					document.write("<tr>");
+					// Place is an attribute on runner
+				  document.write("<td>" + x[i].attributes.getNamedItem("place").value + "</td>");
+				  // Gender is an attribute on runner
+				  document.write("<td>" + x[i].attributes.getNamedItem("gender").value + "</td>");
+				  // Age is an attribute on runner
+				  document.write("<td>" + x[i].attributes.getNamedItem("age").value + "</td>");
+				  // City
+				  document.write("<td>" + x[i].getElementsByTagName("city")[0].childNodes[0].nodeValue + "</td>");
+				  // Time
+				  document.write("<td>" + x[i].getElementsByTagName("time")[0].childNodes[0].nodeValue + "</td>");
+				  // Pace
+				  document.write("<td>" + x[i].getElementsByTagName("pace")[0].childNodes[0].nodeValue + "</td>");
+				  
+				  document.write("</tr>");
+				}
+				document.write("</table>");
+			</script>
+		</li>
+	</ul>
+
+</div>
