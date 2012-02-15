@@ -13,25 +13,23 @@ title: The Golden Gate
 		This weekend I ran in the Golden Gate Trail Run half marathon.  It was the longest distance I have ever ran and it was nothing short of amazing.
 	</p>
 	<p>
-		The results are posted online, but are a little hard to consume.  So, I scrubbed the page with a fast little Ruby parser called Nokogiri, saved the results as XML, and used XSLT to display as HTML under the "Raw" tab. [Insert joke about web developers fixing things that have already been fixed here.]
+		The results are posted online, but are a little hard to consume.  So, I scrubbed the page with a fast little Ruby parser called Nokogiri, saved the results as XML, and used XSLT to display as HTML under the "Raw" tab.
 	</p>
 	
 	<ul class="tabs">
 	  <!-- Give href an ID value of corresponding "tabs-content" <li>'s -->
-	  <li><a class="active" href="#simple">Simple</a></li>
-	  <li><a href="#lightweight">Lightweight</a></li>
+	  <li><a class="active" href="#pace">By Pace</a></li>
 	  <li><a href="#raw">Raw</a></li>
 	</ul>
 
 	<!-- Standard <ul> with class of "tabs-content" -->
 	<ul class="tabs-content">
 	  <!-- Give ID that matches HREF of above anchors -->
-	  <li class="active" id="simple">The tabs are clean and simple unordered-list markup and basic CSS.</li>
-	  <li id="lightweight">The tabs are cross-browser, but don't need a ton of hacky CSS or markup.</li>
+	  <li class="active" id="pace">
+			<div class="charts">
+	  	</div>
+	  </li>
 	  <li id="raw">
-	  	<p>
-	  		Raw race results.
-	  	</p>
 			<script type="text/javascript">
 				var xmlhttp;
 				if (window.XMLHttpRequest) {// code for IE7+, Firefox, Chrome, Opera, Safari
@@ -43,12 +41,18 @@ title: The Golden Gate
 			  xmlhttp.open("GET","/data/GoldenGate2012Results.xml",false);
 				xmlhttp.send();
 				xmlDoc=xmlhttp.responseXML; 
-				document.write("<table style='border:1px solid #333;'>");
+				document.write("<table class='grid'>");
 				var x = xmlDoc.getElementsByTagName("runner");
 				
-				document.write("<tr><th>Place</th><th>Gender</th><th>Age</th><th>Hometown</th><th>Time</th><th>Pace</th></tr>");
+				document.write("<thead><tr><th>Place</th><th>Gender</th><th>Age</th><th>Hometown</th><th>Time</th><th>Pace</th></tr></thead>");
 				for (i=0;i<x.length;i++) {
-					document.write("<tr>");
+					if (x[i].getElementsByTagName("name")[0].childNodes[0].nodeValue == "Elizabeth Greer")
+					{
+						document.write("<tr class='highlight'>");
+					}
+					else {
+						document.write("<tr>");
+					}
 					// Place is an attribute on runner
 				  document.write("<td>" + x[i].attributes.getNamedItem("place").value + "</td>");
 				  // Gender is an attribute on runner
@@ -68,5 +72,15 @@ title: The Golden Gate
 			</script>
 		</li>
 	</ul>
-
 </div>
+
+<script type="text/javascript">
+	var data = [4, 8, 15, 16, 23, 42];
+	d3.select(".charts").append("div")
+    .attr("class", "chart")
+    .selectAll("div")
+    .data(data)
+  .enter().append("div")
+    .style("width", function(d) { return d * 10 + "px"; })
+    .text(function(d) { return d; });
+</script>

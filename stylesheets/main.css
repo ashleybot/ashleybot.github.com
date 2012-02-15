@@ -31,3 +31,26 @@ h2.square
 {
 	font-family:'UbuntuTitlingBold', Arial, Helvetica, sans-serif;
 }
+
+.grid thead
+{
+	border-bottom: 2px solid #ddd;
+}
+
+.grid th
+{
+	padding: 5px 10px;
+	text-align: left;
+	font-weight: bold;
+}
+
+.grid td
+{
+	padding: 5px 10px;
+	border-bottom: 1px solid #ddd;
+}
+
+.highlight td
+{
+	background-color: #ccc;
+}
