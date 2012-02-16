@@ -5,7 +5,6 @@ title: The Golden Gate
 
 <div class="one columns">
 	<h2>{{ page.title }}</h2>
-	
 	<p>
 		I'm really excited about this post.  It combines several things I enjoy: outdoor activities, data visualization, Ruby, and Javascript.
 	</p>
@@ -26,8 +25,7 @@ title: The Golden Gate
 	<ul class="tabs-content">
 	  <!-- Give ID that matches HREF of above anchors -->
 	  <li class="active" id="pace">
-			<div class="charts">
-	  	</div>
+			<div class="charts"></div>
 	  </li>
 	  <li id="raw">
 			<script type="text/javascript">
@@ -43,7 +41,7 @@ title: The Golden Gate
 				xmlDoc=xmlhttp.responseXML; 
 				document.write("<table class='grid'>");
 				var x = xmlDoc.getElementsByTagName("runner");
-				
+				var data = new Array();
 				document.write("<thead><tr><th>Place</th><th>Gender</th><th>Age</th><th>Hometown</th><th>Time</th><th>Pace</th></tr></thead>");
 				for (i=0;i<x.length;i++) {
 					if (x[i].getElementsByTagName("name")[0].childNodes[0].nodeValue == "Elizabeth Greer")
@@ -64,7 +62,9 @@ title: The Golden Gate
 				  // Time
 				  document.write("<td>" + x[i].getElementsByTagName("time")[0].childNodes[0].nodeValue + "</td>");
 				  // Pace
-				  document.write("<td>" + x[i].getElementsByTagName("pace")[0].childNodes[0].nodeValue + "</td>");
+				  var pace = x[i].getElementsByTagName("pace")[0].childNodes[0].nodeValue;
+				  data.push(pace.replace("/M","").replace(":","."));
+				  document.write("<td>" + pace + "</td>");
 				  
 				  document.write("</tr>");
 				}
@@ -73,14 +73,44 @@ title: The Golden Gate
 		</li>
 	</ul>
 </div>
+<div class="one columns golden">
+</div>
 
 <script type="text/javascript">
-	var data = [4, 8, 15, 16, 23, 42];
-	d3.select(".charts").append("div")
-    .attr("class", "chart")
-    .selectAll("div")
-    .data(data)
-  .enter().append("div")
-    .style("width", function(d) { return d * 10 + "px"; })
-    .text(function(d) { return d; });
+	
+	var w = 4,
+      h = 20;
+  
+	var x = d3.scale.linear()
+     .domain([0, 1])
+     .range([0, w]);
+     
+  var y = d3.scale.linear()
+     .domain([0, 20])
+     .rangeRound([0, h]); //rangeRound is used for antialiasing
+     
+	var chart = d3.select(".charts").append("svg")
+     .attr("class", "chart")
+     .attr("width", w * data.length)
+     .attr("height", h);
+  
+  // width is the width of the bar
+  // height is the height of the bar
+  // x and y are the position of the bar
+  // for crips edges use -.5 (antialiasing)
+  chart.selectAll("rect")
+     .data(data)
+   .enter().append("rect")
+   		.attr("x", function(d, i) { return x(i) - .5; })
+   		.attr("y", function(d) { return h - y(d) - .5; })
+     	.attr("width", w)
+     	.attr("height", function(d) { return y(d); } );
+
+	chart.append("line")
+     .attr("x1", 0)
+     .attr("x2", w * data.length)
+     .attr("y1", h - .5)
+     .attr("y2", h - .5)
+     .style("stroke", "#000");
+
 </script>
