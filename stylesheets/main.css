@@ -13,6 +13,10 @@ h1 a:hover {
    margin: 1px;
    color: white;
 }
+ .chart rect {
+   fill: steelblue;
+   stroke: white;
+ }
 h2.superglue{
 	font-family: 'Diplomata SC', cursive;
 	text-align:center;
@@ -53,4 +57,27 @@ h2.square
 .highlight td
 {
 	background-color: #ccc;
+}
+
+.golden
+{
+	text-align: center;
+	line-height: 75px;
+	background: url("http://upload.wikimedia.org/wikipedia/commons/0/02/Golden-Gate-Bridge.svg") -113px -65px;
+}
+
+code
+{
+display: block;
+font-family: monospace;
+white-space: pre;
+margin: 1em 0px;
+}
+
+.gist .gist-file .gist-data {
+	overflow: auto !important;
+}
+
+.gist-meta {
+	display: none !important;
 }
