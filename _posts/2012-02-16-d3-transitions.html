@@ -1,0 +1,106 @@
+---
+layout: d3
+title: D3.js Transitions
+---
+
+<div class="sixteen columns">
+	<h2>{{ page.title }}</h2>
+	<p>
+		This post will continue the <a href="/2012/02/15/d3-basics.html">D3 Basics</a> tutorial with animation, or, as they prefer to call it, transitions.
+	</p>
+
+	<h4>Simple Transitions</h4>
+ 	<div class="row clearfix">
+ 		<div class="seven columns alpha">
+	  	<p>
+	  		In this example, we'll be modifying the following vertical bar chart.  See the <a href="/2012/02/15/d3-basics.html">previous post</a> for more on creating the initial chart.
+	  	</p> 		
+  	</div>
+ 		<div class="eight columns offset-by-one omega">					
+ 			<div class="charts"></div> 
+
+	  	<p id="example1">
+	  		<button>Click me</button>
+	  	</p>
+
+ 			</div>
+		</div>
+	</div>
+ 	<div class="row clearfix">
+ 		<div class="seven columns alpha">
+		<p>
+			We'll first define a redraw function for the chart.  It simply tells D3 to wait a second then redraw each bar.
+		</p>
+ 		</div>
+ 		<div class="eight columns offset-by-one omega">
+			<script src="https://gist.github.com/1850822.js?file=d3transistions1.js"></script>
+ 		</div>
+ 		
+	</div>
+ 	<div class="row clearfix">
+ 		<div class="seven columns alpha">
+  	<p>
+  		Then, modify the dataset and call redraw().  I've attached this behavior to the button above, so click it and see what happens.
+  	</p>
+ 		</div>
+ 		<div class="eight columns offset-by-one omega">
+			<script src="https://gist.github.com/1850822.js?file=d3transistions2.js"></script>
+ 		</div>
+	</div>
+	<p>
+		Simple, no?
+	</p>
+</div>
+
+<script type="text/javascript">
+	var data = [8, 12, 15, 30, 43];
+	var w = 20,
+      h = 50;
+  
+	var x = d3.scale.linear()
+     .domain([0, 1])
+     .range([0, w]);
+     
+  var y = d3.scale.linear()
+     .domain([0, 50])
+     .rangeRound([0, h]); //rangeRound is used for antialiasing
+     
+	var chart = d3.select(".charts").append("svg")
+     .attr("class", "chart")
+     .attr("width", w * data.length)
+     .attr("height", h);
+  
+  // width is the width of the bar
+  // height is the height of the bar
+  // x and y are the position of the bar
+  // for crips edges use -.5 (antialiasing)
+  chart.selectAll("rect")
+     .data(data)
+   .enter().append("rect")
+   		.attr("x", function(d, i) { return x(i) - .5; })
+   		.attr("y", function(d) { return h - y(d) - .5; })
+     	.attr("width", w)
+     	.attr("height", function(d) { return y(d); } );
+
+	chart.append("line")
+     .attr("x1", 0)
+     .attr("x2", w * data.length)
+     .attr("y1", h - .5)
+     .attr("y2", h - .5)
+     .style("stroke", "#000");
+     
+  function redraw() {
+  	chart.selectAll("rect")
+  		.data(data)
+  	 .transition()
+  	 	.duration(1000)
+   		.attr("y", function(d) { return h - y(d) - .5; })
+     	.attr("height", function(d) { return y(d); } );  
+   }
+  
+  d3.select("#example1 button").on("click", function() {
+  	data[2] = 49;
+  	redraw();
+  });
+
+</script>
