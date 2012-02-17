@@ -1,6 +1,8 @@
 ---
 layout: main
 title: Achievements in Visual Studio
+description: A list of my Visual Studio achievements.
+keywords: visual,studio,achievements,programming
 ---
 
 

@@ -1,6 +1,8 @@
 ---
 layout: main
 title: Being Impetuous
+description: My hello world post.
+keywords: initial,post
 ---
 
 <div class="one columns">

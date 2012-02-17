@@ -1,6 +1,8 @@
 ---
 layout: main
 title: The Grand Abyss
+description: Fun with computer science and lost keys.
+keywords: key,sort,packet,routing,algorithm,hiking
 ---
 
 <div class="sixteen columns">

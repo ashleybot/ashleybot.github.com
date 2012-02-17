@@ -1,6 +1,8 @@
 ---
 layout: main
 title: Holy Wayfinding, Batman!
+description: Usability, spatial navigation, and trail maps.
+keywords: trail,hiking,map,spatial,navigation,wayfinding
 ---
 
 <div class="sixteen columns">
