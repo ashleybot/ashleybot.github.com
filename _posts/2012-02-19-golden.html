@@ -38,26 +38,18 @@ title: The Golden Gate
 </div>
 
 <script type="text/javascript">
-	var data = [
-  [11975,  5871, 8916, 2868],
-  [ 1951, 10048, 2060, 6171],
-  [ 8010, 16145, 8090, 8045],
-  [ 1013,   990,  940, 6907]
-];
-  
   d3.xml("/data/GoldenGate2012Results.xml", function(xml) {
   	
-  	var runners = d3.select(xml).selectAll("runner");
-  	console.log(runners);
+  	var runners = d3.select(xml).selectAll("name"); 	
   	
   	var tr = d3.select("#presentation").append("table").selectAll("tr")
-    .data(runners)
-  .enter().append("tr");
+	    .data(runners)
+	   .enter().append("tr");
 
-var td = tr.selectAll("td")
-    .data(function(d) { return d; })
-  .enter().append("td")
-    .text(function(d) { return d; });
+		var td = tr.selectAll("td")
+		    .data(function(d) { return d; }) // 
+		  .enter().append("td")
+		    .text(function(d) { return d.textContent; });
   });
   
 
