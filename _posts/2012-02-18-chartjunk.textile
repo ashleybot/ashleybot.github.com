@@ -39,9 +39,10 @@ keywords: chart,chartjunk,tuft
 	<h4> 2d > 3d > 1d </h4>
 	
 	
-	Another fun tidbit of their findings is that the increase of a dimension is as equally detrimental as the reduction of a dimension.  So, in a bar chart, use a bar that looks like a square rather than a single line or a cube. 
+	Another fun tidbit of their findings is that, in a pairwise comparison the increase of a dimension is as equally detrimental as the reduction of a dimension.  To summarize, use a bar that looks like a square rather than a single line or a cube. 
 		
-	To summarize, anticipate that your users do not know how to read a chart and, therefore, make it very simple by leaving out unnecessary visual clutter.
+	Context is extremely important.  Your data, what your reader has to interpret from that data, and the reader's experience are all in play, but, in general, follow the status-quo and make it simple.
+	
 	
 </div>
 <div class="one columns">
