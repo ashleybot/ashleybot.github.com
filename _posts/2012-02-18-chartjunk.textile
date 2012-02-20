@@ -9,7 +9,7 @@ keywords: chart,chartjunk,tuft
 	<h2>{{ page.title }}</h2>
 	<div class="row clearfix">
 		<div class="ten columns alpha">
-			Much of my time these days is spent reading articles on usability.  One of which is particularly pertinent to my <a href="/2012/02/15/d3-basics.html">recent posts on charting</a> with D3.js.
+			Much of my time these days is spent reading articles on usability.  One of which is particularly pertinent to my <a href="/2012/02/15/d3-basics.html">recent post on charting</a> with D3.js.
 			
 			<h4> Simplicity == Understandability </h4>
 			
