@@ -1,0 +1,64 @@
+---
+layout: d3
+title: The Golden Gate
+---
+
+<div class="one columns">
+	<h2>{{ page.title }}</h2>
+	<p>
+		This post combines a few things I enjoy: outdoor activities, data visualization, and programming.
+	</p>
+	<p>
+		I recently ran in the Golden Gate Trail Run half marathon.  It was the longest distance I have ran and it was nothing short of amazing.
+	</p>
+	<p>
+		The results are posted online, but are hard to consume.  So, I scrubbed the page with a fast little Ruby parser called <a href="http://nokogiri.org/">Nokogiri</a> and saved the results as XML.  And I'm presenting the data as HTML using <a href="http://mbostock.github.com/d3/">D3.js</a>.
+	</p>
+	<p>
+		I'll be using this data in future posts.  You can check out my parser code <a href="https://gist.github.com/1841870#file_golden_gate_trail_run_parser.rb">here</a>.
+	</p>
+	
+	<h3>Race Results</h3>
+	<ul class="tabs">
+	  <!-- Give href an ID value of corresponding "tabs-content" <li>'s -->
+	  <li><a class="active" href="#presentation">HTML View</a></li>
+	  <li><a href="#raw">Raw XML</a></li>
+	</ul>
+
+	<!-- Standard <ul> with class of "tabs-content" -->
+	<ul class="tabs-content">
+	  <!-- Give ID that matches HREF of above anchors -->
+	  <li class="active" id="presentation">	
+	  	
+	  </li>  
+	  <li id="raw">
+		
+		</li>
+	</ul>
+</div>
+
+<script type="text/javascript">
+	var data = [
+  [11975,  5871, 8916, 2868],
+  [ 1951, 10048, 2060, 6171],
+  [ 8010, 16145, 8090, 8045],
+  [ 1013,   990,  940, 6907]
+];
+  
+  d3.xml("/data/GoldenGate2012Results.xml", function(xml) {
+  	
+  	var runners = d3.select(xml).selectAll("runner");
+  	console.log(runners);
+  	
+  	var tr = d3.select("#presentation").append("table").selectAll("tr")
+    .data(runners)
+  .enter().append("tr");
+
+var td = tr.selectAll("td")
+    .data(function(d) { return d; })
+  .enter().append("td")
+    .text(function(d) { return d; });
+  });
+  
+
+</script>
