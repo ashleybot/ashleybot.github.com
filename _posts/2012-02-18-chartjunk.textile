@@ -1,7 +1,7 @@
 ---
 layout: main
 title: Chartjunk
-description: Reviewing a principle of the usability of bar charts.
+description: Reviewing a principle on the usability of bar charts.
 keywords: chart,chartjunk,tuft
 ---
 
@@ -25,6 +25,7 @@ keywords: chart,chartjunk,tuft
 			<img src="http://upload.wikimedia.org/wikipedia/commons/c/c9/Chartjunk-example.svg" style="width:200px;" alt="Image source: Wikipedia" />
 			<blockquote>
 				Chartjunk.
+				
 				<cite>Edward Tufte</cite>
 			</blockquote>
 		</div>
@@ -39,7 +40,7 @@ keywords: chart,chartjunk,tuft
 	<h4> 2d > 3d > 1d </h4>
 	
 	
-	Another fun tidbit of their findings is that, in a pairwise comparison the increase of a dimension is as equally detrimental as the reduction of a dimension.  To summarize, use a bar that looks like a square rather than a single line or a cube. 
+	Another fun tidbit of their findings is that, in a pairwise comparison, the increase of a dimension is as equally detrimental as the reduction of a dimension.  To summarize, use a bar that looks like a square rather than a single line or a cube. 
 		
 	Context is extremely important.  Your data, what your reader has to interpret from that data, and the reader's experience are all in play, but, in general, follow the status-quo and make it simple.
 	
