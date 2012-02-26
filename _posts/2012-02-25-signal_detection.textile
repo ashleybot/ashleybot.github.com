@@ -1,0 +1,63 @@
+---
+layout: d3
+title: Signal Detection Theory
+description:
+keywords:
+---
+
+ <div class="sixteen columns">
+
+h2. {{ page.title }}
+
+Human-technology interaction hooked me with the study of our cognition.  The theories of how our brains work are incredibly fascinating.
+
+And while there are many theories, the first step in learning about how we think is to understand how the information gets there.
+
+This is where Signal Detection Theory comes into play.  A primary function of our cognitive system is to be able to ignore sensory stimuli and to focus on relevant information.
+
+The two basic categories of sensory input are noise and signals.  Noise is all the information in the world that isn't important to the task at hand, and the signal is somewhere amongst all that noise.
+
+ <div class="row clearfix">
+  <div class="seven columns alpha">
+  
+So, depending on whether we recognize or do not recognize the signal, we will produce one of four events in the presence of a signal or noise[1].
+#(#11) A hit - correct recognition of a signal
+#(#10) A false alarm - incorrect assignment of noise as a signal
+#(#01) A miss - a signal is not recognized
+#(#00) A correct rejection - correct recognition of noise
+  
+  </div>
+  <div class="eight columns offset-by-one omega">
+  
+h4. Signal Detection Matrix
+  
+  <table class="grid alllines">
+    <tr>
+      <th></th>
+      <th>Signal</th>
+      <th>Noise</th>
+    </tr>
+    <tr>
+      <td><strong>Recognition</strong></td>
+      <td>Hit</td>
+      <td>False alarm</td>
+    </tr>
+    <tr>
+      <td><strong>No recognition</strong></td>
+      <td>Miss</td>
+      <td>Correct rejection</td>
+    </tr>
+  </table>
+  </div>
+ </div>
+
+At this point, the theory seems very basic and superficial.  The exciting profundity is in sensitivity, human bias, performance optimality, and signal probability.  I'll return to these in future posts.
+
+  <small>
+
+fn1. Engineering Psychology and Human Performance. 3rd Edition.  Wickens, C. and Hollands, J. 2000. Prentice Hall, Inc.
+
+  </small>
+
+
+ </div>
