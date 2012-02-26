@@ -55,7 +55,7 @@ At this point, the theory seems very basic and superficial.  The exciting profun
 
   <small>
 
-fn1. Engineering Psychology and Human Performance. 3rd Edition.  Wickens, C. and Hollands, J. 2000. Prentice Hall, Inc.
+fn1. Wickens, C. and Hollands, J. <i>Engineering Psychology and Human Performance</i> (3rd ed.). Prentice Hall, 2000.
 
   </small>
 
