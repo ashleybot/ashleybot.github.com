@@ -1,8 +1,8 @@
 ---
 layout: d3
 title: Signal Detection Theory
-description:
-keywords:
+description: An explanation of signal and noise in Signal Detection Theory.
+keywords: signal,noise,cognition,theory,information,processing,signaldetectiontheory
 ---
 
  <div class="sixteen columns">
