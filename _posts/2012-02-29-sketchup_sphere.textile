@@ -1,0 +1,43 @@
+---
+layout: main
+title: Create a Sphere in SketchUp
+description: Create a sphere in Google SketchUp using Ruby.
+keywords: sphere,sketchup,ruby
+---
+
+h2. {{ page.title }}
+
+Here's a quick and dirty tutorial for creating a sphere in "Google SketchUp":http://sketchup.google.com .  It assumes you are familiar with SketchUp terminology.
+
+h4. Ruby Console
+
+Create a new document and go to Window => Ruby Console to open an immediate interface to scripting.
+
+First, we'll get a handle on the current model.  Type the following into the console and hit enter.
+
+@model = Sketchup.active_model@
+
+If things go correctly, it will print out the memory address of the model object.
+
+Do the same for the current entities within the model.
+
+@entities = model.active_entities@
+
+Now, we'll set some variables for easy reuse.
+
+@radius = 10.to_l
+numberOfSegments = 24@
+
+Circles are included in the Sketchup library, so we can take advantage the add_circle method.  Here we are creating two circles with the same center point.  One circle is made to have an arbitrary larger radius.
+
+@circle1 = entities.add_circle(ORIGIN, Z_AXIS, radius, numberOfSegments)
+circle2 = entities.add_circle(ORIGIN, X_AXIS, radius * 2, numberOfSegments)@
+
+Now add a face to the smaller circle and use the followme method to create a sphere.
+
+@face = entities.add_face(circle1)
+face.followme(circle2)@
+
+And clean up the edges from the larger circle.
+
+@circle2.each { |edge| edge.erase! }@
