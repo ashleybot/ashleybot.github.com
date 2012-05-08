@@ -9,7 +9,9 @@ keywords: ashley,greer,ashleygreer,lexington,kentucky,ky
 <div class="seven columns omega">
 	<ul class="posts">
     {% for post in site.posts %}
+      {% unless post.categories contains 'portfolio' %}
       <li><span>{{ post.date | date: "%d" }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
+      {% endunless %}
     {% endfor %}
   </ul>
 </div>
