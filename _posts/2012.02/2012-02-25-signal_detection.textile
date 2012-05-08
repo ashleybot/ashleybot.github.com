@@ -31,6 +31,7 @@ So, depending on whether we recognize or do not recognize the signal, we will pr
   
 h4. Signal Detection Matrix
   
+  <div id="matrix"></div>
   <table class="grid alllines">
     <tr>
       <th></th>
@@ -61,3 +62,41 @@ fn1. Wickens, C. and Hollands, J. <i>Engineering Psychology and Human Performanc
 
 
  </div>
+
+<notextile>
+<script type="text/javascript">
+ var data = ["Hit", "Miss", "False alarm", "Correct rejection"],
+    w = 120,
+    h = 120,
+    x = d3.scale.linear().domain(data).range([0, w]),
+    y = d3.scale.linear().domain(data);
+    
+ var svg = d3.select("#matrix").append("svg")
+      .attr("width", w * 4)
+      .attr("height", h * 4);
+
+  svg.selectAll("rect")
+      .data(data)
+    .enter().append("rect")
+      .attr("x", function(d,i) { if (i < 2) return i * w; else return (i-2) * w;})
+      .attr("y", function(d,i) { if (i < 2) return 0; else return h; })
+      .attr("width", w)
+      .attr("height", h)
+      .style("fill", "none")
+      .style("stroke", "#000")
+      .style("stroke-width", 1);
+  
+  svg.selectAll("text")
+    .data(data)
+    .enter().append("text")
+      .attr("dx", function(d,i) { if (i < 2) return w/2; else return w + w/2; })
+      .attr("dy", function(d,i) { if (i < 2) return (i * h) + h/2; else return (h * (i-2)) + h/2; })
+      .attr("text-anchor", "middle")
+      .style("stroke", "#000")
+      .text(String);
+    
+  </script>
+ </notextile>
+ 
+ 
+ 

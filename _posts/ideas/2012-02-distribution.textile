@@ -1,0 +1,48 @@
+---
+layout: jstat
+title: Normal Distrbution
+description: An explanation of signals and noise as normal distribution curves.
+keywords: signal,noise,cognition,theory,information,processing,signaldetectiontheory
+---
+
+h2. {{page.title}}
+
+The presence of a signal or noise can be modeled as a normal distribution curve.
+
+"There are two stages of information processing in the task of detection: (1) Sensory evidence is aggregated concerning the presence or absence of the signal, and (2) a decision is made about whether this evidence indicates a signal or not."
+
+  <div class="row clearfix">
+    <div class="eight columns alpha">
+h4. Noise
+
+      <div id="noise" style="width:100%;height:400px;"></div>
+    </div>
+    <div class="eight columns omega">
+h4. Signal
+
+      <div id="signal" style="width:400px;height:400px;"></div>
+    </div>
+  </div>
+  
+  
+<notextile> 
+  <script type="text/javascript">
+      $(document).ready(function() {
+      
+        var dist = new NormalDistribution(0,1);
+        var noise = new DistributionPlot('noise', dist, dist.getRange(3, 100));
+        noise.showPDF();
+        
+        // generate 100 points betwen -5 and 5
+        //var range = jstat.seq(-3,3,100);
+        // calculate the densities at each point
+        //var densities = jstat.dnorm(range, 0.0, 1.0);
+        // produce the plot (no formatting)
+        //jstat.plot(range, densities);
+        
+        // the following overwrites the noise distribution
+        //var signal = new DistributionPlot('noise', dist, dist.getRange(4,100));
+        //signal.showPDF();
+      });
+    </script>
+</notextile>
