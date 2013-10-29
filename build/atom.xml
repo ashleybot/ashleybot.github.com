@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+ 
+ <title>ashleygreer</title>
+ <link href="http://www.ashleybot.com/atom.xml" rel="self"/>
+ <link href="http://www.ashleybot.com/"/>
+ <updated>2013-10-29T23:22:13+00:00</updated>
+ <id>http://www.ashleybot.com/</id>
+ <author>
+   <name>Ashley Greer Wilson</name>
+   <email>ashley@ashleybot.com</email>
+ </author>
+
+ 
+ <entry>
+   <title>Foreign Language Conference Mobile Web</title>
+   <link href="http://www.ashleybot.com/portfolio/uky-flc.html"/>
+   <updated>2013-10-29T00:00:00+00:00</updated>
+   <id>http://www.ashleybot.com/portfolio/uky-flc</id>
+   <summary>Ashley Greer's Portfolio, a usability advocate and programmer in Lexington, KY.</summary>
+ </entry>
+ 
+ <entry>
+   <title>Storyboarding</title>
+   <link href="http://www.ashleybot.com/portfolio/storyboards.html"/>
+   <updated>2013-10-29T00:00:00+00:00</updated>
+   <id>http://www.ashleybot.com/portfolio/storyboards</id>
+   <summary>Ashley Greer's Portfolio, a usability advocate and programmer in Lexington, KY.</summary>
+ </entry>
+ 
+ <entry>
+   <title>Context Free Grammar Art</title>
+   <link href="http://www.ashleybot.com/portfolio/context-free.html"/>
+   <updated>2013-10-29T00:00:00+00:00</updated>
+   <id>http://www.ashleybot.com/portfolio/context-free</id>
+   <summary>Ashley Greer's Portfolio, a usability advocate and programmer in Lexington, KY.</summary>
+ </entry>
+ 
+ <entry>
+   <title>Bird Enemies iPad Magazine Layout</title>
+   <link href="http://www.ashleybot.com/portfolio/BirdEnemies.html"/>
+   <updated>2012-11-29T00:00:00+00:00</updated>
+   <id>http://www.ashleybot.com/portfolio/birdenemies</id>
+   <summary>Ashley Greer's Portfolio, a usability advocate and programmer in Lexington, KY.</summary>
+ </entry>
+ 
+ <entry>
+   <title>Details</title>
+   <link href="http://www.ashleybot.com/portfolio/2012/05/07/details.html"/>
+   <updated>2012-05-07T00:00:00+01:00</updated>
+   <id>http://www.ashleybot.com/portfolio/2012/05/07/details</id>
+   <summary>All something is, is a collection of details.</summary>
+ </entry>
+ 
+ <entry>
+   <title>Create a Sphere in SketchUp</title>
+   <link href="http://www.ashleybot.com/2012/02/29/sketchup_sphere.html"/>
+   <updated>2012-02-29T00:00:00+00:00</updated>
+   <id>http://www.ashleybot.com/2012/02/29/sketchup_sphere</id>
+   <summary>Create a sphere in Google SketchUp using Ruby.</summary>
+ </entry>
+ 
+ <entry>
+   <title>Signal Detection Theory</title>
+   <link href="http://www.ashleybot.com/2012/02/25/signal_detection.html"/>
+   <updated>2012-02-25T00:00:00+00:00</updated>
+   <id>http://www.ashleybot.com/2012/02/25/signal_detection</id>
+   <summary>An explanation of signal and noise in Signal Detection Theory.</summary>
+ </entry>
+ 
+ <entry>
+   <title>The Weight of Glass</title>
+   <link href="http://www.ashleybot.com/2012/02/24/glass.html"/>
+   <updated>2012-02-24T00:00:00+00:00</updated>
+   <id>http://www.ashleybot.com/2012/02/24/glass</id>
+   <summary>A story of overcoming my fears.</summary>
+ </entry>
+ 
+ <entry>
+   <title>The Golden Gate</title>
+   <link href="http://www.ashleybot.com/2012/02/19/golden.html"/>
+   <updated>2012-02-19T00:00:00+00:00</updated>
+   <id>http://www.ashleybot.com/2012/02/19/golden</id>
+   <summary>In the post, I provide a link to a code example of Nokogiri and explain XML data access with D3.js.</summary>
+ </entry>
+ 
+ <entry>
+   <title>Chartjunk</title>
+   <link href="http://www.ashleybot.com/2012/02/18/chartjunk.html"/>
+   <updated>2012-02-18T00:00:00+00:00</updated>
+   <id>http://www.ashleybot.com/2012/02/18/chartjunk</id>
+   <summary>Reviewing a principle on the usability of bar charts.</summary>
+ </entry>
+ 
+ <entry>
+   <title>D3.js Transitions</title>
+   <link href="http://www.ashleybot.com/2012/02/16/d3-transitions.html"/>
+   <updated>2012-02-16T00:00:00+00:00</updated>
+   <id>http://www.ashleybot.com/2012/02/16/d3-transitions</id>
+   <summary>A simple animated bar chart using the D3 javascript library.</summary>
+ </entry>
+ 
+ <entry>
+   <title>D3.js Basics</title>
+   <link href="http://www.ashleybot.com/2012/02/15/d3-basics.html"/>
+   <updated>2012-02-15T00:00:00+00:00</updated>
+   <id>http://www.ashleybot.com/2012/02/15/d3-basics</id>
+   <summary>A very basic tutorial of rendering an SVG bar chart with the D3 javascript library.</summary>
+ </entry>
+ 
+ <entry>
+   <title>Adhesion</title>
+   <link href="http://www.ashleybot.com/2012/02/06/adhesion.html"/>
+   <updated>2012-02-06T00:00:00+00:00</updated>
+   <id>http://www.ashleybot.com/2012/02/06/adhesion</id>
+   <summary>Adhesion is an art project of mine.</summary>
+ </entry>
+ 
+ <entry>
+   <title>The Bowl</title>
+   <link href="http://www.ashleybot.com/2012/02/05/the_bowl.html"/>
+   <updated>2012-02-05T00:00:00+00:00</updated>
+   <id>http://www.ashleybot.com/2012/02/05/the_bowl</id>
+   <summary>A quote of Laozi's and a sketch of mine.</summary>
+ </entry>
+ 
+ <entry>
+   <title>The Grand Abyss</title>
+   <link href="http://www.ashleybot.com/2012/02/04/grand_abyss.html"/>
+   <updated>2012-02-04T00:00:00+00:00</updated>
+   <id>http://www.ashleybot.com/2012/02/04/grand_abyss</id>
+   <summary>Fun with computer science and lost keys.</summary>
+ </entry>
+ 
+ <entry>
+   <title>Holy Wayfinding, Batman!</title>
+   <link href="http://www.ashleybot.com/2012/02/03/wayfinding.html"/>
+   <updated>2012-02-03T00:00:00+00:00</updated>
+   <id>http://www.ashleybot.com/2012/02/03/wayfinding</id>
+   <summary>Usability, spatial navigation, and trail maps.</summary>
+ </entry>
+ 
+ <entry>
+   <title>Achievements in Visual Studio</title>
+   <link href="http://www.ashleybot.com/2012/02/02/achievements.html"/>
+   <updated>2012-02-02T00:00:00+00:00</updated>
+   <id>http://www.ashleybot.com/2012/02/02/achievements</id>
+   <summary>A list of my Visual Studio achievements.</summary>
+ </entry>
+ 
+ <entry>
+   <title>Being Impetuous</title>
+   <link href="http://www.ashleybot.com/2012/02/01/impetuous.html"/>
+   <updated>2012-02-01T00:00:00+00:00</updated>
+   <id>http://www.ashleybot.com/2012/02/01/impetuous</id>
+   <summary>My hello world post.</summary>
+ </entry>
+ 
+ 
+</feed>

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="en"> <!--<![endif]-->
+	<head>
+	
+		<!-- Basic Page Needs
+	  ================================================== -->
+		<meta charset="utf-8">
+		<title>Create a Sphere in SketchUp</title>
+		<meta name="description" content="Create a sphere in Google SketchUp using Ruby.">
+		<meta name="author" content="Ashley Greer Wilson">
+		<meta name="keywords" content="sphere,sketchup,ruby">
+		<!--[if lt IE 9]>
+			<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+	
+		<!-- Mobile Specific Metas
+	  ================================================== -->
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+		
+		<!-- CSS
+	  ================================================== -->
+		<link rel="stylesheet" href="/stylesheets/base.css">
+		<link rel="stylesheet" href="/stylesheets/skeleton.css">
+		<link rel="stylesheet" href="/stylesheets/layout.css">
+		<link rel="stylesheet" href="/stylesheets/main.css">
+	
+		<!-- Favicons
+		================================================== -->
+		<link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
+		<link rel="apple-touch-icon" sizes="72x72" href="/images/apple-touch-icon-72x72.png">
+		<link rel="apple-touch-icon" sizes="114x114" href="/images/apple-touch-icon-114x114.png">
+	</head>
+	<body>
+	
+		<div class="container">
+			<div class="ten columns">
+			  <a href="/"><img src="/images/AW_logo.svg" width="300px" /></a>
+			</div>
+			<div class="three columns">
+			  <a href="/about.html">About</a>
+			  <a href="/portfolio/">Portfolio</a>
+			  <a href="/blog.html">Blog</a>
+			  <a href="/contact.html">Contact</a>
+			</div>
+			<div class="three columns omega">
+			   <a href="http://github.com/ashleybot"><img alt="ashleybot's github" style="width:20px;padding:10px;" src="/images/github_mark.svg" /></a>
+				<a href="/atom.xml" type="application/atom+xml" rel="alternate" title="ATOM Feed" ><img alt="RSS" style="width:20px;padding:10px;" src="/images/bigrss.gif" /></a>
+			</div>
+			<hr />
+			
+			<div class="row clearfix">
+				<h2>Create a Sphere in SketchUp</h2>
+<p>Here&#8217;s a quick and dirty tutorial for creating a sphere in <a href="http://sketchup.google.com">Google SketchUp</a> .  It assumes you are familiar with SketchUp terminology.</p>
+<h4>Ruby Console</h4>
+<p>Create a new document and go to Window =&gt; Ruby Console to open an immediate interface to scripting.</p>
+<p>First, we&#8217;ll get a handle on the current model.  Type the following into the console and hit enter.</p>
+<p><code>model = Sketchup.active_model</code></p>
+<p>If things go correctly, it will print out the memory address of the model object.</p>
+<p>Do the same for the current entities within the model.</p>
+<p><code>entities = model.active_entities</code></p>
+<p>Now, we&#8217;ll set some variables for easy reuse.</p>
+<p><code>radius = 10.to_l
+numberOfSegments = 24</code></p>
+<p>Circles are included in the Sketchup library, so we can take advantage the add_circle method.  Here we are creating two circles with the same center point.  One circle is made to have an arbitrary larger radius.</p>
+<p><code>circle1 = entities.add_circle(ORIGIN, Z_AXIS, radius, numberOfSegments)
+circle2 = entities.add_circle(ORIGIN, X_AXIS, radius * 2, numberOfSegments)</code></p>
+<p>Now add a face to the smaller circle and use the followme method to create a sphere.</p>
+<p><code>face = entities.add_face(circle1)
+face.followme(circle2)</code></p>
+<p>And clean up the edges from the larger circle.</p>
+<p><code>circle2.each { |edge| edge.erase! }</code></p>
+			</div>
+			
+			
+			<hr />
+			<div class="twelve columns alpha" style="margin-bottom:30px;">
+				<small>
+					Created by <a href="mailto:ashley@ashleygreer.com">Ashley Greer</a> 2012.
+					<br />
+					It's built with <a href="http://www.getskeleton.com/">Skeleton</a>, a css boilerplate for responsive design, using <a href="http://jekyllrb.com/">Jekyll</a>, a static site generator, and is hosted on <a href="http://github.com/">GitHub</a>.
+				</small>
+
+			</div>
+			<div class="four columns omega" style="margin-bottom:30px;">
+				<small>
+					<img src="http://i.creativecommons.org/l/by-sa/3.0/88x31.png" alt="CC BY-SA icon" />
+					<br />
+					Except where otherwise <strong>noted</strong>, content on this site is licensed under a <a href="http://creativecommons.org/licenses/by-sa/3.0/">Creative Commons Attribution-ShareAlike 3.0 License</a>.
+				</small>
+			</div>
+		</div><!-- container -->
+	
+	
+	
+		<!-- JS
+		================================================== -->
+		<script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+		
+		<script type="text/javascript">
+
+		  var _gaq = _gaq || [];
+		  _gaq.push(['_setAccount', 'UA-29484417-1']);
+		  _gaq.push(['_trackPageview']);
+		
+		  (function() {
+		    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		  })();
+		
+		</script>
+	</body>
+ </html>
