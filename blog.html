@@ -10,12 +10,12 @@ keywords: ashley,greer,wilson,ashleygreer,ashleygreerwilson,lexington,kentucky,k
 	<ul class="posts">
     {% for post in site.posts %}
       {% unless post.categories contains 'portfolio' %}
-      <li><span>{{ post.date | date: "%d" }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
+      <li><span>{{ post.date | date: "%d" }}</span> &raquo; <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li>
       {% endunless %}
     {% endfor %}
   </ul>
 </div>
-<div class="eight columns offset-by-one alpha">  
+<div class="eight columns offset-by-one alpha">
 	<img style="width:100%;height:auto;" src="http://www.gravatar.com/avatar/fd5460bdc6504b7ba0f46b3512f4f36e?size=400" />
 
 </div>

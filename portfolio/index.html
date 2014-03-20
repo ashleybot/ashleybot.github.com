@@ -9,11 +9,11 @@ keywords: portfolio,ashley,greer,ashleygreer,lexington,kentucky,ky
 <div class="seven columns omega">
 	<ul class="posts">
     {% for post in site.categories.portfolio %}
-      <li><span>{{ post.date | date: "%d" }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
+      <li><span>{{ post.date | date: "%d" }}</span> &raquo; <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li>
     {% endfor %}
   </ul>
 </div>
-<div class="eight columns offset-by-one alpha">  
+<div class="eight columns offset-by-one alpha">
 
 
 </div>
