@@ -2,18 +2,24 @@ body {
   background: #ffffff url("../images/background_1920x20.png") repeat-y;
 }
 
-.th:hover{
-  -webkit-box-shadow: 0 0 6px 1px rgba(43, 166, 203, 0.5);
-  box-shadow: 0 0 6px 1px rgba(43, 166, 203, 0.5);
+.top-bar {
+  background: #ffffff;
 }
 
-.th{
-  line-height: 0;
-  display: inline-block;
-  border: solid 4px white;
-  -webkit-box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.2);
-  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.2);
-  -webkit-transition: all 200ms ease-out;
-  -moz-transition: all 200ms ease-out;
-  transition: all 200ms ease-out;
+.wrap {
+  min-height: 100%;
+}
+
+#main-content {
+  padding-bottom: 180px
+}
+
+#footer {
+  background: #ffffff;
+  border-top: 1px solid #ddd;
+  padding: 24px 0 10px;
+  position: relative;
+	margin-top: -180px; /* negative value of footer height */
+	height: 180px;
+	clear:both;}
 }

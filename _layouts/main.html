@@ -34,22 +34,15 @@
 		<link rel="apple-touch-icon" sizes="114x114" href="{{ site.baseurl }}/images/apple-touch-icon-114x114.png">
 	</head>
 	<body>
-	  <header id="header" class="row">
-		  <div class="small-6 large-4 columns">
-  		  <a href="{{ site.baseurl }}/index.html">
-  		    <img src="{{ site.baseurl }}/images/AW_logo.svg" />
-        </a>
-		  </div>
-			{% include menu.html %}
-		</header>
+		{% include menu.html %}
 
-
-		<div class="row">
-			{{ content }}
+		<div class="wrap">
+			<section id="main-content">
+				{{ content }}
+			</section>
 		</div>
 
 
-		<hr />
 		{% include footer.html %}
 
 

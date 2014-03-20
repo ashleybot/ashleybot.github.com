@@ -1,14 +1,42 @@
-<div class="small-6 large-8 columns">
-  <nav class="breadcrumbs">
-    <a href="{{ site.baseurl }}/about.html">About</a>
-    <a href="{{ site.baseurl }}/portfolio/">Portfolio</a>
-    <a href="{{ site.baseurl }}/blog.html">Blog</a>
-    <a href="{{ site.baseurl }}/contact.html">Contact</a>
-    <a href="http://github.com/ashleybot">
-      <img alt="ashleybot's github" style="width:20px;padding:10px;" src="{{ site.baseurl }}/images/github_mark.svg" />
-    </a>
-    <a href="{{ site.baseurl }}/atom.xml" type="application/atom+xml" rel="alternate" title="ATOM Feed" >
-      <img alt="RSS" style="width:20px;padding:10px;" src="{{ site.baseurl }}/images/bigrss.gif" />
-    </a>
-  </nav>
-</div>
+<nav class="top-bar" data-topbar>
+  <ul class="title-area">
+    <li class="name">
+      <a href="{{ site.baseurl }}/index.html">
+        <img src="{{ site.baseurl }}/images/AW_logo.svg" width="100px" height="100px" />
+      </a>
+    </li>
+    <li class="toggle-topbar menu-icon"><a href="#">Menu</a></li>
+  </ul>
+
+  <section class="top-bar-section">
+    <!-- Right Nav Section -->
+    <ul class="right">
+      <li class="divider"></li>
+      <li>
+        <a href="{{ site.baseurl }}/about.html">About</a>
+      </li>
+      <li>
+        <a href="{{ site.baseurl }}/portfolio/">Portfolio</a>
+      </li>
+      <li class="has-dropdown">
+        <a href="{{ site.baseurl }}/blog.html">Blog</a>
+        <ul class="dropdown">
+          <li><a href="#">First link in dropdown</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="{{ site.baseurl }}/contact.html">Contact</a>
+      </li>
+      <li>
+          <a href="http://github.com/ashleybot">
+            <img alt="ashleybot's github" style="width:20px;padding:10px;" src="{{ site.baseurl }}/images/github_mark.svg" />
+          </a>
+      </li>
+      <li>
+        <a href="{{ site.baseurl }}/atom.xml" type="application/atom+xml" rel="alternate" title="ATOM Feed" >
+          <img alt="RSS" style="width:20px;padding:10px;" src="{{ site.baseurl }}/images/bigrss.gif" />
+        </a>
+      </li>
+    </ul>
+  </section>
+</nav>
