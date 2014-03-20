@@ -40,20 +40,7 @@
   		    <img src="{{ site.baseurl }}/images/AW_logo.svg" />
         </a>
 		  </div>
-		  <div class="small-6 large-8 columns">
-    		<nav class="breadcrumbs">
-  				<a href="{{ site.baseurl }}/about.html">About</a>
-  				<a href="{{ site.baseurl }}/portfolio/">Portfolio</a>
-  				<a href="{{ site.baseurl }}/blog.html">Blog</a>
-          <a href="{{ site.baseurl }}/contact.html">Contact</a>
-          <a href="http://github.com/ashleybot">
-            <img alt="ashleybot's github" style="width:20px;padding:10px;" src="{{ site.baseurl }}/images/github_mark.svg" />
-          </a>
-          <a href="{{ site.baseurl }}/atom.xml" type="application/atom+xml" rel="alternate" title="ATOM Feed" >
-    			  <img alt="RSS" style="width:20px;padding:10px;" src="{{ site.baseurl }}/images/bigrss.gif" />
-    			</a>
-        </nav>
-		  </div>
+			{% include menu.html %}
 		</header>
 
 
@@ -63,23 +50,7 @@
 
 
 		<hr />
-		<div class="row">
-  		<div class="large-6 columns" style="margin-bottom:30px;">
-  			<small>
-  				Created by <a href="mailto:ashley@ashleybot.com">Ashley Wilson</a> 2012.
-  				<br />
-  				It's built with <a href="http://foundation.zurb.com/">ZURB Foundation</a>, a framework for responsive design, using <a href="http://jekyllrb.com/">Jekyll</a>, a static site generator, and is hosted on <a href="http://github.com/">GitHub</a>.
-  			</small>
-
-  		</div>
-  		<div class="large-4 columns" style="margin-bottom:30px;">
-  			<small>
-  				<img src="http://i.creativecommons.org/l/by-sa/3.0/88x31.png" alt="CC BY-SA icon" />
-  				<br />
-  				Except where otherwise <strong>noted</strong>, content on this site is licensed under a <a href="http://creativecommons.org/licenses/by-sa/3.0/">Creative Commons Attribution-ShareAlike 3.0 License</a>.
-  			</small>
-  		</div>
-		</div>
+		{% include footer.html %}
 
 
 
