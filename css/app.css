@@ -1,3 +1,7 @@
+body {
+  background: #ffffff url("../images/background_1920x20.png") repeat-y;
+}
+
 .th:hover{
   -webkit-box-shadow: 0 0 6px 1px rgba(43, 166, 203, 0.5);
   box-shadow: 0 0 6px 1px rgba(43, 166, 203, 0.5);

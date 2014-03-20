@@ -1,15 +1,13 @@
 <!DOCTYPE html>
 
-<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
-<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
-<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<!--[if IE 9]><html class="lt-ie10" lang="en" > <![endif]-->
+<html class="no-js" lang="en">
 <head>
 
 		<!-- Basic Page Needs
 	  ================================================== -->
 		<meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>{{ page.title }}</title>
 		<meta name="description" content="{{ page.description }}">
 		<meta name="author" content="Ashley Greer Wilson">
@@ -17,7 +15,9 @@
 
 		<!-- CSS
 	  ================================================== -->
-		<link rel="stylesheet" href="{{ site.baseurl }}/css/foundation.css">
+		<link rel="stylesheet" href="{{ site.baseurl }}/css/normalize.css">
+		<link rel="stylesheet" href="{{ site.baseurl }}/css/foundation.min.css">
+		<link rel="stylesheet" href="{{ site.baseurl }}/css/app.css">
 
 
   	<script src="{{ site.baseurl }}/js/vendor/custom.modernizr.js"></script>
@@ -56,19 +56,11 @@
 
 		<!-- JS
 		================================================== -->
-		<script>
-      document.write('<script src=' +
-      ('__proto__' in {} ? '{{ site.baseurl }}/js/vendor/zepto' : '{{ site.baseurl }}/js/vendor/jquery') +
-      '.js><\/script>')
-    </script>
-
+		<script src="{{ site.baseurl }}/js/vendor/jquery.js"></script>
     <script src="{{ site.baseurl }}/js/foundation.min.js"></script>
 
-    <script>
-      $(document).foundation();
-    </script>
-
 		<script type="text/javascript">
+			$(document).foundation();
 
 		  var _gaq = _gaq || [];
 		  _gaq.push(['_setAccount', 'UA-29484417-1']);
