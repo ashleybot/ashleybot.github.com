@@ -3,12 +3,14 @@
     <ul class="small-block-grid-2 large-block-grid-4">
       {% for post in site.categories.portfolio %}
         <li>
-          <div class="panel portfolio_th">
+          <div class="portfolio_th">
             <a href="{{ site.baseurl }}{{ post.url }}">
-              <img src="portfolio/images/uk_flc/ipad_homepage_thumbnail.jpg" alt="ipad_homepage_thumbnail" />
+              <img src="{{ site.baseurl }}{{ post.thumbnail }}" alt="Project Thumbnail" />
             </a>
-            <h5>{{ post.title }}</h5>
-            <h6 class="subheader">{{ post.date | date: "%d" }}</h6>
+            <div class="panel">
+              <h5>{{ post.title }}</h5>
+              <h6 class="subheader">{{ post.date | date: "%d-%m-%y" }}</h6>
+            </div>
           </div>
         </li>
       {% endfor %}
