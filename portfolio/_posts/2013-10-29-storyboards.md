@@ -5,6 +5,7 @@ description: Ashley Greer's Portfolio, a usability advocate and programmer in Le
 keywords: portfolio,ashley,greer,ashleygreer,lexington,kentucky,ky
 permalink: /portfolio/storyboards.html
 thumbnail: /portfolio/images/storyboards/family_airport_thumbnail.jpg
+blurb: Communicating use 
 ---
 
 ## {{ page.title }}
