@@ -2,7 +2,7 @@
 layout: portfolio
 title: Code Rummy
 description: Code Rummy by Ashley Wilson, a usability advocate and programmer in Lexington, KY.
-keywords: portfolio,ashley,greer,ashleygreer,lexington,kentucky,ky
+keywords: portfolio,ashley,wilson,ashleywilson,ashleygreerwilson,lexington,kentucky,ky
 permalink: /portfolio/code-rummy.html
 tags: playtesting, mechanics, dynamics, aesthetics, card game, programming, illustrator, indesign
 thumbnail: /portfolio/assets/code_rummy/images/code_rummy_thumbnail_large.png

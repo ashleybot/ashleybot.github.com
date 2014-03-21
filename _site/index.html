@@ -17,7 +17,7 @@
 	  ================================================== -->
 
     <link rel="stylesheet" href="/css/app.css" />
-    <script src="/bower_components/modernizr/modernizr.js"></script>
+    <script src="/js/vendor/modernizr.min.js"></script>
 
   	<!-- IE Fix for HTML5 Tags -->
   	<!--[if lt IE 9]>
@@ -87,6 +87,7 @@
         </h4>
       </li>
       <li>
+        <!-- Context Free Art //-->
         <div class="portfolio_th">
           <a href="portfolio/context-free.html">
             <img src="/portfolio/assets/context_free/triangles_thumbnail_large.png" alt="Context Free Art Quilt" />
@@ -99,6 +100,7 @@
         </div>
       </li>
       <li>
+        <!-- UK FLC Website //-->
         <div class="portfolio_th">
           <a href="portfolio/uky-flc.html">
             <img src="/portfolio/assets/uk_flc/ipad_homepage_thumbnail.jpg" alt="ipad_homepage_thumbnail" />
@@ -111,9 +113,10 @@
         </div>
       </li>
       <li>
+        <!-- Quick Storyboarding //-->
         <div class="portfolio_th">
           <a href="portfolio/storyboards.html">
-            <img src="/portfolio/assets/storyboards/family_airport_thumbnail.jpg" alt="ipad_homepage_thumbnail" />
+            <img src="/portfolio/assets/storyboards/storyboarding_thumbnail_large.png" alt="Storyboarding Thumbnail" />
 
             <div class="panel">
               <h5>Quick Storyboarding</h5>
@@ -126,10 +129,11 @@
   </div>
 </div>
 
-<div class="row">
-  <div class="large-3 columns">
+<div class="row" data-equalizer>
+  <!-- Code Rummy //-->
+  <div class="large-3 columns" data-equalizer-watch>
     <div class="portfolio_th">
-      <a href="portfolio/code-rummy.html">
+      <a href="/portfolio/code-rummy.html">
         <img src="/portfolio/assets/code_rummy/images/code_rummy_thumbnail_large.png" alt="Code Rummy" />
 
         <div class="panel">
@@ -139,16 +143,32 @@
       </a>
     </div>
   </div>
-  <div class="large-6 columns">
-    <div class="panel">
-      <h5>Panel Title</h5>
-      <p>This is a six columns grid panel with an arbitrary height. Bacon ipsum dolor sit amet salami ham hock biltong ball tip drumstick sirloin pancetta meatball short loin.</p>
+
+  <!-- Sign Spell //-->
+  <div class="large-6 columns" data-equalizer-watch>
+    <div class="portfolio_th">
+      <a href="/portfolio/chip-and-scooter.html">
+        <img src="/portfolio/assets/chip_and_scooter/images/chip_and_scooter_thumbnail_large.png" alt="Code Rummy" />
+
+        <div class="panel">
+          <h5>Chip n' Scooter</h5>
+          <p>A 3D animated short</p>
+        </div>
+      </a>
     </div>
   </div>
-  <div class="large-3  columns">
-    <div class="panel">
-      <h5>Panel Title</h5>
-      <p>This is a three columns grid panel with an arbitrary height.</p>
+
+  <!-- Chip and Scooter //-->
+  <div class="large-3  columns" data-equalizer-watch>
+    <div class="portfolio_th">
+      <a href="/portfolio/chip-and-scooter.html">
+        <img src="/portfolio/assets/chip_and_scooter/images/chip_and_scooter_thumbnail_large.png" alt="Code Rummy" />
+
+        <div class="panel">
+          <h5>Chip and Scooter</h5>
+          <p>A 3D animated short</p>
+        </div>
+      </a>
     </div>
   </div>
 
@@ -209,11 +229,9 @@
 
 		<!-- JS
 		================================================== -->
-		<script src="/bower_components/jquery/dist/jquery.min.js"></script>
-    <script src="/bower_components/foundation/js/foundation.min.js"></script>
+		<script src="/js/vendor/jquery.min.js"></script>
+  	<script src="/js/foundation.min.js"></script>
     <script type="text/javascript">
-			$(document).foundation();
-
 		  var _gaq = _gaq || [];
 		  _gaq.push(['_setAccount', 'UA-29484417-1']);
 		  _gaq.push(['_trackPageview']);
@@ -224,6 +242,10 @@
 		    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
 		  })();
 
+			$(document).foundation({
+			  reveal : {
+			    animation_speed: 500
+			  }});
 		</script>
 	</body>
  </html>

@@ -17,7 +17,7 @@
 	  ================================================== -->
 
     <link rel="stylesheet" href="{{ site.baseurl }}/css/app.css" />
-    <script src="{{ site.baseurl }}/bower_components/modernizr/modernizr.js"></script>
+    <script src="{{ site.baseurl }}/js/vendor/modernizr.min.js"></script>
 
   	<!-- IE Fix for HTML5 Tags -->
   	<!--[if lt IE 9]>
@@ -46,11 +46,9 @@
 
 		<!-- JS
 		================================================== -->
-		<script src="{{ site.baseurl }}/bower_components/jquery/dist/jquery.min.js"></script>
-    <script src="{{ site.baseurl }}/bower_components/foundation/js/foundation.min.js"></script>
+		<script src="{{ site.baseurl }}/js/vendor/jquery.min.js"></script>
+  	<script src="{{ site.baseurl }}/js/foundation.min.js"></script>
     <script type="text/javascript">
-			$(document).foundation();
-
 		  var _gaq = _gaq || [];
 		  _gaq.push(['_setAccount', 'UA-29484417-1']);
 		  _gaq.push(['_trackPageview']);
@@ -61,6 +59,10 @@
 		    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
 		  })();
 
+			$(document).foundation({
+			  reveal : {
+			    animation_speed: 500
+			  }});
 		</script>
 	</body>
  </html>
