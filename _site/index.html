@@ -17,7 +17,7 @@
 	  ================================================== -->
 
     <link rel="stylesheet" href="/css/app.css" />
-    <script src="/js/vendor/modernizr.min.js"></script>
+    <script src="/bower_components/modernizr/modernizr.js"></script>
 
   	<!-- IE Fix for HTML5 Tags -->
   	<!--[if lt IE 9]>
@@ -229,8 +229,9 @@
 
 		<!-- JS
 		================================================== -->
-		<script src="/js/vendor/jquery.min.js"></script>
-  	<script src="/js/foundation.min.js"></script>
+		<script src="/bower_components/jquery/dist/jquery.js"></script>
+		<script src="/bower_components/fastclick/lib/fastclick.js"></script>
+  	<script src="/bower_components/foundation/js/foundation.js"></script>
     <script type="text/javascript">
 		  var _gaq = _gaq || [];
 		  _gaq.push(['_setAccount', 'UA-29484417-1']);
@@ -242,10 +243,7 @@
 		    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
 		  })();
 
-			$(document).foundation({
-			  reveal : {
-			    animation_speed: 500
-			  }});
+			$(document).foundation();
 		</script>
 	</body>
  </html>
