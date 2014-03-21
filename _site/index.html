@@ -1,26 +1,23 @@
 <!DOCTYPE html>
 
-<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
-<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
-<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<!--[if IE 9]><html class="lt-ie10" lang="en" > <![endif]-->
+<html class="no-js" lang="en">
 <head>
 
 		<!-- Basic Page Needs
 	  ================================================== -->
 		<meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>ashleybot</title>
-		<meta name="description" content="Personal website of Ashley Greer Wilson, a usability advocate and programmer from Lexington, KY.">
+		<meta name="description" content="Personal website of Ashley Wilson, a recent graduate of Carnegie-Mellon's Masters of HCI program.">
 		<meta name="author" content="Ashley Greer Wilson">
-		<meta name="keywords" content="ashley,greer,wilson,ashleygreer,ashleygreerwilson,lexington,kentucky,ky">
+		<meta name="keywords" content="ashley,wilson,ashleygreerwilson,lexington,kentucky,ky">
 
 		<!-- CSS
 	  ================================================== -->
-		<link rel="stylesheet" href="/css/foundation.css">
 
-
-  	<script src="/js/vendor/custom.modernizr.js"></script>
+    <link rel="stylesheet" href="/css/app.css" />
+    <script src="/bower_components/modernizr/modernizr.js"></script>
 
   	<!-- IE Fix for HTML5 Tags -->
   	<!--[if lt IE 9]>
@@ -34,81 +31,170 @@
 		<link rel="apple-touch-icon" sizes="114x114" href="/images/apple-touch-icon-114x114.png">
 	</head>
 	<body>
-	  <header id="header" class="row">
-		  <div class="small-6 large-4 columns">
-  		  <a href="/index.html">
-  		    <img src="/images/AW_logo.svg" />
+		<nav class="top-bar" data-topbar>
+  <ul class="title-area">
+    <li class="name">
+      <a href="/index.html">
+        <img src="/images/AW_logo.svg" width="100px" height="100px" />
+      </a>
+    </li>
+    <li class="toggle-topbar menu-icon"><a href="#">Menu</a></li>
+  </ul>
+
+  <section class="top-bar-section">
+    <!-- Right Nav Section -->
+    <ul class="right">
+      <li class="divider"></li>
+      <li>
+        <a href="/about.html">About</a>
+      </li>
+      <li>
+        <a href="/portfolio/">Portfolio</a>
+      </li>
+      <li class="has-dropdown">
+        <a href="/blog.html">Blog</a>
+        <ul class="dropdown">
+          <li><a href="#">First link in dropdown</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="/contact.html">Contact</a>
+      </li>
+      <li>
+          <a href="http://github.com/ashleybot">
+            <img alt="ashleybot's github" style="width:20px;padding:10px;" src="/images/github_mark.svg" />
+          </a>
+      </li>
+      <li>
+        <a href="/atom.xml" type="application/atom+xml" rel="alternate" title="ATOM Feed" >
+          <img alt="RSS" style="width:20px;padding:10px;" src="/images/bigrss.gif" />
         </a>
-		  </div>
-			<div class="small-6 large-8 columns">
-  <nav class="breadcrumbs">
-    <a href="/about.html">About</a>
-    <a href="/portfolio/">Portfolio</a>
-    <a href="/blog.html">Blog</a>
-    <a href="/contact.html">Contact</a>
-    <a href="http://github.com/ashleybot">
-      <img alt="ashleybot's github" style="width:20px;padding:10px;" src="/images/github_mark.svg" />
-    </a>
-    <a href="/atom.xml" type="application/atom+xml" rel="alternate" title="ATOM Feed" >
-      <img alt="RSS" style="width:20px;padding:10px;" src="/images/bigrss.gif" />
-    </a>
-  </nav>
+      </li>
+    </ul>
+  </section>
+</nav>
+
+
+		<div class="wrap">
+			<section id="main-content">
+				<div class="row">
+  <h2>Hi there,</h2>
 </div>
 
-		</header>
-
-
-		<div class="row">
-			<div class="row">
+<div class="row">
   <div class="large-12 columns">
-    <h2>Portfolio Preview</h2>
-    <h4 class="subheader">
-      Here's a few of my latest projects. Please take a look!
-    </h4>
     <ul class="small-block-grid-2 large-block-grid-4">
       <li>
-        <a href="portfolio/uky-flc.html">
-          <img class="th" src="portfolio/images/uk_flc/ipad_homepage_thumbnail.jpg" alt="ipad_homepage_thumbnail" />
-        </a>
-        <div class="panel">
-          <h5>Mobile Web</h5>
-          <h6 class="subheader">Styling mobile first</h6>
+          <h4 class="subheader">
+          I'm Ashley Wilson. I'm a game designer, user researcher, and illustrator. Take a look around.
+        </h4>
+      </li>
+      <li>
+        <div class="portfolio_th">
+          <a href="portfolio/context-free.html">
+            <img src="portfolio/images/context_free/triangles_thumbnail.jpg" alt="triangles_thumbnail" />
+          </a>
+          <div class="panel">
+            <h5>Digital Art</h5>
+            <h6 class="subheader">Using Context Free Grammar</h6>
+          </div>
         </div>
       </li>
-      <li class="th">
-        <a href="portfolio/context-free.html">
-          <img src="portfolio/images/context_free/triangles_thumbnail.jpg" alt="triangles_thumbnail" />
-        </a>
-        <div class="">
-          <h5>Digital Art</h5>
-          <h6 class="subheader">Using Context Free Grammar</h6>
+      <li>
+        <div class="portfolio_th">
+          <a href="portfolio/uky-flc.html">
+            <img src="portfolio/images/uk_flc/ipad_homepage_thumbnail.jpg" alt="ipad_homepage_thumbnail" />
+          </a>
+          <div class="panel">
+            <h5>Mobile Web</h5>
+            <h6 class="subheader">Styling mobile first</h6>
+          </div>
         </div>
       </li>
-      <li><img src="portfolio/images/storyboards/family_airport_thumbnail.jpg"></li>
-      <li></li>
+      <li>
+        <div class="portfolio_th">
+          <a href="portfolio/uky-flc.html">
+            <img src="portfolio/images/uk_flc/ipad_homepage_thumbnail.jpg" alt="ipad_homepage_thumbnail" />
+          </a>
+          <div class="panel">
+            <h5>Mobile Web</h5>
+            <h6 class="subheader">Styling mobile first</h6>
+          </div>
+        </div>
+      </li>
     </ul>
   </div>
 </div>
 
+<div class="row">
+  <div class="large-3 columns">
+<div class="panel">
+  <h5>Panel Title</h5>
+  <p>This is a six columns grid panel with an arbitrary height. Bacon ipsum dolor sit amet salami ham hock biltong ball tip drumstick sirloin pancetta meatball short loin.</p>
+</div>
+  </div>
+  <div class="large-6 columns">
+    <div class="panel">
+      <h5>Panel Title</h5>
+      <p>This is a six columns grid panel with an arbitrary height. Bacon ipsum dolor sit amet salami ham hock biltong ball tip drumstick sirloin pancetta meatball short loin.</p>
+    </div>
+  </div>
+  <div class="large-3  columns">
+    <div class="panel">
+      <h5>Panel Title</h5>
+      <p>This is a three columns grid panel with an arbitrary height.</p>
+    </div>
+  </div>
+
+</div>
+
+
+
+<div class="row">
+
+  <div class="large-6 columns">
+    <div class="panel">
+      <h5>Panel Title</h5>
+      <p>This is a six columns grid panel with an arbitrary height. Bacon ipsum dolor sit amet salami ham hock biltong ball tip drumstick sirloin pancetta meatball short loin.</p>
+    </div>
+  </div>
+  <div class="large-2 columns">
+    <div class="panel">
+      <p>
+        <img src="http://placehold.it/200x200" />
+      </p>
+    </div>
+  </div>
+  <div class="large-4 columns">
+    <div class="panel">
+      <h5>Panel Title</h5>
+      <p>This is a four columns grid panel with an arbitrary height. Bacon ipsum dolor sit amet salami.</p>
+    </div>
+  </div>
+
+</div>
+
+			</section>
 		</div>
 
 
-		<hr />
-		<div class="row">
-  <div class="large-6 columns" style="margin-bottom:30px;">
-    <small>
-      Created by <a href="mailto:ashley@ashleybot.com">Ashley Wilson</a> 2012.
-      <br />
-      It's built with <a href="http://foundation.zurb.com/">ZURB Foundation</a>, a framework for responsive design, using <a href="http://jekyllrb.com/">Jekyll</a>, a static site generator, and is hosted on <a href="http://github.com/">GitHub</a>.
-    </small>
+		<div id="footer">
+  <div class="row">
+    <div class="medium-8 columns" style="margin-bottom:30px;">
+      <small>
+        Created by <a href="mailto:ashley@ashleybot.com">Ashley Wilson</a> 2012.
+        <br />
+        It's built with <a href="http://foundation.zurb.com/">ZURB Foundation</a>, a framework for responsive design, using <a href="http://jekyllrb.com/">Jekyll</a>, a static site generator, and is hosted on <a href="http://github.com/">GitHub</a>.
+      </small>
 
-  </div>
-  <div class="large-4 columns" style="margin-bottom:30px;">
-    <small>
-      <img src="http://i.creativecommons.org/l/by-sa/3.0/88x31.png" alt="CC BY-SA icon" />
-      <br />
-      Except where otherwise <strong>noted</strong>, content on this site is licensed under a <a href="http://creativecommons.org/licenses/by-sa/3.0/">Creative Commons Attribution-ShareAlike 3.0 License</a>.
-    </small>
+    </div>
+    <div class="medium-4 columns" style="margin-bottom:30px;">
+      <small>
+        <img src="http://i.creativecommons.org/l/by-sa/3.0/88x31.png" alt="CC BY-SA icon" />
+        <br />
+        Except where otherwise <strong>noted</strong>, content on this site is licensed under a <a href="http://creativecommons.org/licenses/by-sa/3.0/">Creative Commons Attribution-ShareAlike 3.0 License</a>.
+      </small>
+    </div>
   </div>
 </div>
 
@@ -117,19 +203,10 @@
 
 		<!-- JS
 		================================================== -->
-		<script>
-      document.write('<script src=' +
-      ('__proto__' in {} ? '/js/vendor/zepto' : '/js/vendor/jquery') +
-      '.js><\/script>')
-    </script>
-
-    <script src="/js/foundation.min.js"></script>
-
-    <script>
-      $(document).foundation();
-    </script>
-
-		<script type="text/javascript">
+		<script src="/bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="/bower_components/foundation/js/foundation.min.js"></script>
+    <script type="text/javascript">
+			$(document).foundation();
 
 		  var _gaq = _gaq || [];
 		  _gaq.push(['_setAccount', 'UA-29484417-1']);
