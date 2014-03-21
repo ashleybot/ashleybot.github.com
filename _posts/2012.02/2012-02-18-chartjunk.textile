@@ -1,5 +1,5 @@
 ---
-layout: main
+layout: blog
 title: Chartjunk
 description: Reviewing a principle on the usability of bar charts.
 keywords: chart,chartjunk,tuft
@@ -10,41 +10,41 @@ keywords: chart,chartjunk,tuft
 	<div class="row clearfix">
 		<div class="ten columns alpha">
 			Much of my time these days is spent reading articles on usability.  One of which is particularly pertinent to my <a href="/2012/02/15/d3-basics.html">recent post on charting</a> with D3.js.
-			
+
 			<h4> Simplicity == Understandability </h4>
-			
-			
+
+
 			I believe most people are familiar with the notion that charts should be visually very simple.  It's widely known that the realism of 3-dimensional bars in a chart presents unnecessary cognitive demand.
-			
+
 			Excepting Excel, most programs and libraries (D3 being a great example) follow this principle by using 2-dimensional bars by default.
-			
+
 			Ah, BUT, and this is a good point that I'll return to in my writings, it is *highly* context-based.  Yes, friends, while the eliminate-chartjunk principle is true, it is not universal.
-			
+
 		</div>
 		<div class="six columns omega">
 			<img src="http://upload.wikimedia.org/wikipedia/commons/c/c9/Chartjunk-example.svg" style="width:200px;" alt="Image source: Wikipedia" />
 			<blockquote>
 				Chartjunk.
-				
+
 				<cite>Edward Tufte</cite>
 			</blockquote>
 		</div>
 	</div>
 	<h4>Surprising Findings</h4>
-	
-	
+
+
 	Some researchers found that in situations of high graphical literacy, additional dimensional data does not have a negative effect on interpretation of data.  Meaning, people who have learned how to read a chart are unaffected by a 3-dimensional bar.
-	
+
 	It's more complicated than that, but this is a very interesting finding considering we thought that "chartjunk" is a very bad thing in all situations.
-	
+
 	<h4> 2d > 3d > 1d </h4>
-	
-	
-	Another fun tidbit of their findings is that, in a pairwise comparison, the increase of a dimension is as equally detrimental as the reduction of a dimension.  To summarize, use a bar that looks like a square rather than a single line or a cube. 
-		
+
+
+	Another fun tidbit of their findings is that, in a pairwise comparison, the increase of a dimension is as equally detrimental as the reduction of a dimension.  To summarize, use a bar that looks like a square rather than a single line or a cube.
+
 	Context is extremely important.  Your data, what your reader has to interpret from that data, and the reader's experience are all in play, but, in general, follow the status-quo and make it simple.
-	
-	
+
+
 </div>
 <div class="one columns">
 	<small>

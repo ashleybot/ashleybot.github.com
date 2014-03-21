@@ -1,5 +1,5 @@
 ---
-layout: d3
+layout: blog
 title: D3.js Basics
 description: A very basic tutorial of rendering an SVG bar chart with the D3 javascript library.
 keywords: chart,visualization,javascript,d3,d3.js
@@ -19,10 +19,10 @@ keywords: chart,visualization,javascript,d3,d3.js
  		<div class="seven columns alpha">
 	  	<p>
 	  		In this example, we'll be creating the following vertical bar chart.
-	  	</p> 		
+	  	</p>
   	</div>
  		<div class="eight columns offset-by-one omega">
-			<div class="charts"></div> 		
+			<div class="charts"></div>
 		</div>
 	</div>
  	<div class="row clearfix">
@@ -34,7 +34,7 @@ keywords: chart,visualization,javascript,d3,d3.js
  		<div class="eight columns offset-by-one omega">
 			<script src="https://gist.github.com/1842440.js?file=d3basics1.js"></script>
  		</div>
- 		
+
 	</div>
  	<div class="row clearfix">
  		<div class="seven columns alpha">
@@ -45,7 +45,7 @@ keywords: chart,visualization,javascript,d3,d3.js
  		<div class="eight columns offset-by-one omega">
 			<script src="https://gist.github.com/1842440.js?file=d3basics2.js"></script>
  		</div>
- 		
+
 	</div>
  	<div class="row clearfix">
  		<div class="seven columns alpha">
@@ -56,7 +56,7 @@ keywords: chart,visualization,javascript,d3,d3.js
  		<div class="eight columns offset-by-one omega">
 			<script src="https://gist.github.com/1842440.js?file=d3basics3.js"></script>
  		</div>
- 		
+
 	</div>
  	<div class="row clearfix">
  		<div class="seven columns alpha">
@@ -67,7 +67,7 @@ keywords: chart,visualization,javascript,d3,d3.js
  		<div class="eight columns offset-by-one omega">
 			<script src="https://gist.github.com/1842440.js?file=d3basics4.js"></script>
  		</div>
- 		
+
 	</div>
  	<div class="row clearfix">
  		<div class="seven columns alpha">
@@ -104,20 +104,20 @@ keywords: chart,visualization,javascript,d3,d3.js
 	var data = [8, 12, 15, 30, 43];
 	var w = 20,
       h = 50;
-  
+
 	var x = d3.scale.linear()
      .domain([0, 1])
      .range([0, w]);
-     
+
   var y = d3.scale.linear()
      .domain([0, 50])
      .rangeRound([0, h]); //rangeRound is used for antialiasing
-     
+
 	var chart = d3.select(".charts").append("svg")
      .attr("class", "chart")
      .attr("width", w * data.length)
      .attr("height", h);
-  
+
   // width is the width of the bar
   // height is the height of the bar
   // x and y are the position of the bar

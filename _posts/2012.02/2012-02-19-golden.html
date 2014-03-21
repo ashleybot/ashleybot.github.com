@@ -1,5 +1,5 @@
 ---
-layout: d3
+layout: blog
 title: The Golden Gate
 description: In the post, I provide a link to a code example of Nokogiri and explain XML data access with D3.js.
 keywords: d3,d3.js,xml,ruby,nokogiri,javascript,half-marathon
@@ -19,7 +19,7 @@ keywords: d3,d3.js,xml,ruby,nokogiri,javascript,half-marathon
 	<p>
 		I'll be using this data in future posts.  You can check out my parser code <a href="https://gist.github.com/1841870#file_golden_gate_trail_run_parser.rb">here</a>.
 	</p>
-	
+
 	<h3>Race Results</h3>
 	<ul class="tabs">
 	  <!-- Give href an ID value of corresponding "tabs-content" <li>'s -->
@@ -31,9 +31,9 @@ keywords: d3,d3.js,xml,ruby,nokogiri,javascript,half-marathon
 	<!-- Standard <ul> with class of "tabs-content" -->
 	<ul class="tabs-content">
 	  <!-- Give ID that matches HREF of above anchors -->
-	  <li class="active" id="presentation">	
-	  	
-	  </li>  
+	  <li class="active" id="presentation">
+
+	  </li>
 	  <li id="raw">
 	  	<script src="https://gist.github.com/1873934.js?file=Example.xml"></script>
 		</li>
@@ -45,22 +45,22 @@ keywords: d3,d3.js,xml,ruby,nokogiri,javascript,half-marathon
 
 <script type="text/javascript">
 d3.xml("/data/GoldenGate2012Results.xml", function(xml) {
-	
+
 	var runners = d3.select(xml).selectAll("runner")[0];
-	
+
 	var table = d3.select("#presentation").append("table").attr("class","grid");
-	
+
   var thead = table.append("thead");
   thead.append("th").text("Gender");
   thead.append("th").text("City");
   thead.append("th").text("Time");
   thead.append("th").text("Pace");
-	
+
 	var tr = table.selectAll("tr")
     .data(runners)
    .enter().append("tr");
-  
- 	// place 
+
+ 	// place
 	var td = tr.selectAll("td")
 		.data(function(d) {
 			return d3.select(d).attr("gender");
@@ -69,36 +69,36 @@ d3.xml("/data/GoldenGate2012Results.xml", function(xml) {
 			.text(function(d) {
 				return d;
 			});
-  
+
   // city
 	tr.selectAll("tr")
 	    .data(function(d) {
-	    	return d3.select(d).select("city")[0]; 
+	    	return d3.select(d).select("city")[0];
 	    })
 	  .enter().append("td")
 	    .text(function(d) {
 	    	return d.textContent;
 	    });
-	    
+
 	// time
 	tr.selectAll("tr")
 	    .data(function(d) {
-	    	return d3.select(d).select("time")[0]; 
+	    	return d3.select(d).select("time")[0];
 	    })
 	  .enter().append("td")
 	    .text(function(d) {
 	    	return d.textContent;
 	    });
-		
+
 	// pace
 	tr.selectAll("tr")
 	    .data(function(d) {
-	    	return d3.select(d).select("pace")[0]; 
+	    	return d3.select(d).select("pace")[0];
 	    })
 	  .enter().append("td")
 	    .text(function(d) {
 	    	return d.textContent;
 	    });
 });
-  
+
 </script>

@@ -1,5 +1,5 @@
 ---
-layout: d3
+layout: blog
 title: D3.js Transitions
 description: A simple animated bar chart using the D3 javascript library.
 keywords: chart,animation,transition,javascript,d3,d3.js
@@ -16,10 +16,10 @@ keywords: chart,animation,transition,javascript,d3,d3.js
  		<div class="seven columns alpha">
 	  	<p>
 	  		In this example, we'll be modifying the following vertical bar chart.  See the <a href="/2012/02/15/d3-basics.html">previous post</a> for more on creating the initial chart.
-	  	</p> 		
+	  	</p>
   	</div>
- 		<div class="eight columns offset-by-one omega">					
- 			<div class="charts"></div> 
+ 		<div class="eight columns offset-by-one omega">
+ 			<div class="charts"></div>
 
 	  	<p id="example1">
 	  		<button>Click me</button>
@@ -36,7 +36,7 @@ keywords: chart,animation,transition,javascript,d3,d3.js
  		<div class="eight columns offset-by-one omega">
 			<script src="https://gist.github.com/1850822.js?file=d3transistions1.js"></script>
  		</div>
- 		
+
 	</div>
  	<div class="row clearfix">
  		<div class="seven columns alpha">
@@ -57,20 +57,20 @@ keywords: chart,animation,transition,javascript,d3,d3.js
 	var data = [8, 12, 15, 30, 43];
 	var w = 20,
       h = 50;
-  
+
 	var x = d3.scale.linear()
      .domain([0, 1])
      .range([0, w]);
-     
+
   var y = d3.scale.linear()
      .domain([0, 50])
      .rangeRound([0, h]); //rangeRound is used for antialiasing
-     
+
 	var chart = d3.select(".charts").append("svg")
      .attr("class", "chart")
      .attr("width", w * data.length)
      .attr("height", h);
-  
+
   // width is the width of the bar
   // height is the height of the bar
   // x and y are the position of the bar
@@ -89,16 +89,16 @@ keywords: chart,animation,transition,javascript,d3,d3.js
      .attr("y1", h - .5)
      .attr("y2", h - .5)
      .style("stroke", "#000");
-     
+
   function redraw() {
   	chart.selectAll("rect")
   		.data(data)
   	 .transition()
   	 	.duration(1000)
    		.attr("y", function(d) { return h - y(d) - .5; })
-     	.attr("height", function(d) { return y(d); } );  
+     	.attr("height", function(d) { return y(d); } );
    }
-  
+
   d3.select("#example1 button").on("click", function() {
   	data[2] = 49;
   	redraw();

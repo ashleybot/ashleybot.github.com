@@ -1,5 +1,5 @@
 ---
-layout: main
+layout: portfolio
 title: Context Free Grammar Art
 description: Ashley Greer's Portfolio, a usability advocate and programmer in Lexington, KY.
 keywords: portfolio,ashley,greer,ashleygreer,lexington,kentucky,ky

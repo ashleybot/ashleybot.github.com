@@ -4,21 +4,7 @@ title: ashleygreer portfolio
 description: Ashley Greer's Portfolio, a usability advocate and programmer in Lexington, KY.
 keywords: portfolio,ashley,greer,ashleygreer,lexington,kentucky,ky
 ---
-
 <div class="row">
-	<div class="large-12 columns">
-		<ul class="small-block-grid-2 large-block-grid-4">
-			{% for post in site.categories.portfolio %}
-				<li>
-					<div class="panel portfolio_th">
-						<a href="{{ site.baseurl }}{{ post.url }}">
-							<img src="portfolio/images/uk_flc/ipad_homepage_thumbnail.jpg" alt="ipad_homepage_thumbnail" />
-						</a>
-						<h5>{{ post.title }}</h5>
-						<h6 class="subheader">{{ post.date | date: "%d" }}</h6>
-					</div>
-				</li>
-			{% endfor %}
-		</ul>
-	</div>
+<h1>Portfolio</h1>
 </div>
+{% include portfolio_menu.html %}

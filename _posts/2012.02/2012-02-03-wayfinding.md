@@ -1,23 +1,17 @@
 ---
-layout: main
+layout: blog
 title: Holy Wayfinding, Batman!
 description: Usability, spatial navigation, and trail maps.
 keywords: trail,hiking,map,spatial,navigation,wayfinding
 ---
 
-<div class="sixteen columns">
-	<h2>{{ page.title }}</h2>
-	
-	<p>
-		A benefit of living in Kentucky is its beautiful <a href="http://parks.ky.gov/" target="_new">state parks</a>, federal forest preserves, and local parks and sanctuaries.
-	</p>
-	<p>
-		One of the local nature sanctuaries, <a href="http://www.lexingtonky.gov/index.aspx?page=276" target="_new">Raven Run</a>, is only 15 miles outside of town.  It features several hiking trails over diverse terrain and views of the Kentucky River Palisades.  You can view the official map embedded in a pdf <a href="http://www.lexingtonky.gov/Modules/ShowDocument.aspx?documentid=15670" target="_new">here</a>.
-	</p>
-	<p>
-		Actually, don't follow that link, you can just view the screenshot I snipped.
-	</p>
-</div>
+## {{ page.title }}
+
+A benefit of living in Kentucky is its beautiful <a href="http://parks.ky.gov/" target="_new">state parks</a>, federal forest preserves, and local parks and sanctuaries.
+
+One of the local nature sanctuaries, <a href="http://www.lexingtonky.gov/index.aspx?page=276" target="_new">Raven Run</a>, is only 15 miles outside of town.  It features several hiking trails over diverse terrain and views of the Kentucky River Palisades.  You can view the official map embedded in a pdf <a href="http://www.lexingtonky.gov/Modules/ShowDocument.aspx?documentid=15670" target="_new">here</a>.
+
+Actually, don't follow that link, you can just view the screenshot I snipped.
 
 <div class="four columns">
 	<p>
@@ -38,15 +32,9 @@ keywords: trail,hiking,map,spatial,navigation,wayfinding
 		</li>
 	</ul>
 </div>
-<div class="twelve columns omega">
-		<img src="http://dl.dropbox.com/u/15031981/RavenRun/OriginalMap.png" alt="Screenshot of original Raven Run topographical map.">
-</div>
 
-<div class="sixteen columns">
-	<p>
-		To be fair, the actual map that is provided at the sanctuary is slightly different, but they both have common problems related to cognition.
-	</p>
-	<p>
-		In a future post, I'll make some suggestions based on my quick heuristic analysis.
-	</p>
-</div>
+<img src="http://dl.dropbox.com/u/15031981/RavenRun/OriginalMap.png" alt="Screenshot of original Raven Run topographical map.">
+
+To be fair, the actual map that is provided at the sanctuary is slightly different, but they both have common problems related to cognition.
+
+In a future post, I'll make some suggestions based on my quick heuristic analysis.

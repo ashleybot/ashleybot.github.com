@@ -1,11 +1,10 @@
 ---
-layout: d3
+layout: blog
 title: Signal Detection Theory
 description: An explanation of signal and noise in Signal Detection Theory.
 keywords: signal,noise,cognition,theory,information,processing,signaldetectiontheory
 ---
 
- <div class="sixteen columns">
 
 h2. {{ page.title }}
 
@@ -19,18 +18,18 @@ The two basic categories of sensory input are noise and signals.  Noise is all t
 
  <div class="row clearfix">
   <div class="seven columns alpha">
-  
+
 So, depending on whether we recognize or do not recognize the signal, we will produce one of four events in the presence of a signal or noise[1].
 #(#11) A hit - correct recognition of a signal
 #(#10) A false alarm - incorrect assignment of noise as a signal
 #(#01) A miss - a signal is not recognized
 #(#00) A correct rejection - correct recognition of noise
-  
+
   </div>
   <div class="eight columns offset-by-one omega">
-  
+
 h4. Signal Detection Matrix
-  
+
   <div id="matrix"></div>
   <table class="grid alllines">
     <tr>
@@ -61,7 +60,6 @@ fn1. Wickens, C. and Hollands, J. <i>Engineering Psychology and Human Performanc
   </small>
 
 
- </div>
 
 <notextile>
 <script type="text/javascript">
@@ -70,7 +68,7 @@ fn1. Wickens, C. and Hollands, J. <i>Engineering Psychology and Human Performanc
     h = 120,
     x = d3.scale.linear().domain(data).range([0, w]),
     y = d3.scale.linear().domain(data);
-    
+
  var svg = d3.select("#matrix").append("svg")
       .attr("width", w * 4)
       .attr("height", h * 4);
@@ -85,7 +83,7 @@ fn1. Wickens, C. and Hollands, J. <i>Engineering Psychology and Human Performanc
       .style("fill", "none")
       .style("stroke", "#000")
       .style("stroke-width", 1);
-  
+
   svg.selectAll("text")
     .data(data)
     .enter().append("text")
@@ -94,9 +92,6 @@ fn1. Wickens, C. and Hollands, J. <i>Engineering Psychology and Human Performanc
       .attr("text-anchor", "middle")
       .style("stroke", "#000")
       .text(String);
-    
+
   </script>
  </notextile>
- 
- 
- 

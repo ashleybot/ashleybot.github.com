@@ -1,5 +1,5 @@
 ---
-layout: main
+layout: blog
 title: Create a Sphere in SketchUp
 description: Create a sphere in Google SketchUp using Ruby.
 keywords: sphere,sketchup,ruby

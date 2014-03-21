@@ -1,13 +1,13 @@
 ---
-layout: main
+layout: blog
 title: Being Impetuous
 description: My hello world post.
 keywords: initial,post
 ---
 
-<div class="one columns">
+<div class="row">
 	<h2>{{ page.title }}</h2>
-	
+
 	This is my hello world post. They're often boring and useless, so just go check out <a href="https://github.com/">github</a>, <a href="http://jekyllrb.com/">jekyll</a>, and <a href="http://www.getskeleton.com/">skeleton boilerplate</a>.
 
 </div>
