@@ -1,11 +1,11 @@
 ---
 layout: portfolio
 title: Storyboarding
-description: Ashley Greer's Portfolio, a usability advocate and programmer in Lexington, KY.
+description: Storyboading by Ashley Wilson, a usability advocate and programmer in Lexington, KY.
 keywords: portfolio,ashley,greer,ashleygreer,lexington,kentucky,ky
 permalink: /portfolio/storyboards.html
 thumbnail: /portfolio/images/storyboards/family_airport_thumbnail.jpg
-blurb: Communicating use 
+blurb: Communicating use
 ---
 
 ## {{ page.title }}
