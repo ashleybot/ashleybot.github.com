@@ -1,7 +1,7 @@
 ---
 layout: portfolio
-title: Storyboarding
-description: Storyboading by Ashley Wilson, a usability advocate and programmer in Lexington, KY.
+title: Quick Storyboarding
+description: Quick Storyboarding by Ashley Wilson, a usability advocate and programmer in Lexington, KY.
 keywords: portfolio,ashley,greer,ashleygreer,lexington,kentucky,ky
 permalink: /portfolio/storyboards.html
 thumbnail: /portfolio/assets/storyboards/family_airport_thumbnail.jpg
