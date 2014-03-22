@@ -6,11 +6,12 @@
           <div class="portfolio_th">
             <a href="{{ site.baseurl }}{{ post.url }}">
               <img src="{{ site.baseurl }}{{ post.thumbnail }}" alt="Project Thumbnail" />
+
+              <div class="panel">
+                <h5>{{ post.title }}</h5>
+                <h6 class="subheader">{{ post.blurb }}</h6>
+              </div>
             </a>
-            <div class="panel">
-              <h5>{{ post.title }}</h5>
-              <h6 class="subheader">{{ post.blurb }}</h6>
-            </div>
           </div>
         </li>
       {% endfor %}
