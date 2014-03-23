@@ -5,7 +5,7 @@ description: Sign Spell by Ashley Wilson, a usability advocate and programmer in
 keywords: portfolio,ashley,wilson,ashleywilson,ashleygreerwilson,lexington,kentucky,ky
 permalink: /portfolio/sign-spell.html
 tags:
-thumbnail: /portfolio/assets/sign_spel/images/sign_spell_thumbnail_large.png
+thumbnail: /portfolio/assets/sign_spell/images/sign_spell_thumbnail_large.png
 blurb: A game to encourage ASL use
 ---
 
