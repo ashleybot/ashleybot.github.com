@@ -1,24 +1,25 @@
 ---
-layout: blog
+layout: d3
 title: D3.js Transitions
 description: A simple animated bar chart using the D3 javascript library.
 keywords: chart,animation,transition,javascript,d3,d3.js
 ---
 
-<div class="sixteen columns">
-	<h2>{{ page.title }}</h2>
+
+	<div class="row">
+		<h2>{{ page.title }}</h2>
 	<p>
-		This post will continue the <a href="/2012/02/15/d3-basics.html">D3 Basics</a> tutorial with animation, or, as they prefer to call it, transitions.
+		This post will continue the <a href="{{ site.baseurl }}/2012/02/15/d3-basics.html">D3 Basics</a> tutorial with animation, or, as they prefer to call it, transitions.
 	</p>
 
 	<h4>Simple Transitions</h4>
  	<div class="row clearfix">
- 		<div class="seven columns alpha">
+ 		<div class="large-7 columns">
 	  	<p>
-	  		In this example, we'll be modifying the following vertical bar chart.  See the <a href="/2012/02/15/d3-basics.html">previous post</a> for more on creating the initial chart.
+	  		In this example, we'll be modifying the following vertical bar chart.  See the <a href="{{ site.baseurl }}/2012/02/15/d3-basics.html">previous post</a> for more on creating the initial chart.
 	  	</p>
   	</div>
- 		<div class="eight columns offset-by-one omega">
+ 		<div class="large-5 columns">
  			<div class="charts"></div>
 
 	  	<p id="example1">
@@ -27,24 +28,25 @@ keywords: chart,animation,transition,javascript,d3,d3.js
 
 		</div>
 	</div>
- 	<div class="row clearfix">
- 		<div class="seven columns alpha">
+
+ 	<div class="row ">
+ 		<div class="large-7 columns">
 		<p>
 			We'll first define a redraw function for the chart.  It simply tells D3 to wait a second then redraw each bar.
 		</p>
  		</div>
- 		<div class="eight columns offset-by-one omega">
+ 		<div class="large-5 columns">
 			<script src="https://gist.github.com/1850822.js?file=d3transistions1.js"></script>
  		</div>
 
 	</div>
- 	<div class="row clearfix">
- 		<div class="seven columns alpha">
+ 	<div class="row">
+ 		<div class="large-7 columns">
   	<p>
   		Then, modify the dataset and call redraw().  I've attached this behavior to the button above, so click it and see what happens.
   	</p>
  		</div>
- 		<div class="eight columns offset-by-one omega">
+ 		<div class="large-5 columns">
 			<script src="https://gist.github.com/1850822.js?file=d3transistions2.js"></script>
  		</div>
 	</div>
