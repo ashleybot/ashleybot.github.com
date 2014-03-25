@@ -2,6 +2,7 @@
   <div class="large-12 columns">
     <ul class="small-block-grid-2 large-block-grid-4">
       {% for post in site.categories.portfolio %}
+        {% if post.permalink != page.url %}
         <li>
           <div class="portfolio_th">
             <a href="{{ site.baseurl }}{{ post.url }}">
@@ -14,6 +15,7 @@
             </a>
           </div>
         </li>
+        {% endif %}
       {% endfor %}
     </ul>
   </div>
