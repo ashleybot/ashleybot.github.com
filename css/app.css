@@ -60,7 +60,7 @@ body {
 
 /* line 348, ../bower_components/foundation/scss/foundation/components/_global.scss */
 body {
-  background: white url("../images/background_1920x20.png") repeat-y;
+  background: #eeecf0;
   color: #222222;
   padding: 0;
   margin: 0;
