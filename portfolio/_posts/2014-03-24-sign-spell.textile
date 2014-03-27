@@ -18,14 +18,17 @@ blurb: A game to encourage ASL use
 
 <div class="row">
   <div class="large-6 columns">
-    <img src="{{ site.baseurl }}/portfolio/assets/sign_spell/images/sign_spell_thumbnail_large.png" alt="Players testing Sign Spell" />
+    <p>
+      <img src="{{ site.baseurl }}/portfolio/assets/sign_spell/images/sign_spell_thumbnail_large.png" alt="Players testing Sign Spell" />
+    </p>
   </div>
   <div class="large-6 columns">
-    <img src="{{ site.baseurl }}/portfolio/assets/sign_spell/images/sign_spell_playtesting.png" alt="Players testing Sign Spell" />
+    <p>
+      <img src="{{ site.baseurl }}/portfolio/assets/sign_spell/images/sign_spell_playtesting.png" alt="Players testing Sign Spell" />
+    </p>
   </div>
 </div>
 
-<hr />
 
 <div class="row">
   <div class="large-6 columns">
@@ -94,8 +97,9 @@ blurb: A game to encourage ASL use
 <div class="row">
   <div class="large-6 columns">
     <h4>Brainstorming</h4>
-    <img src="{{ site.baseurl }}/portfolio/assets/sign_spell/images/sign_spell_sketch.jpg" alt="Sign Spell Initial Sketch" />
-
+    <p>
+      <img src="{{ site.baseurl }}/portfolio/assets/sign_spell/images/sign_spell_sketch.jpg" alt="Sign Spell Initial Sketch" />
+    </p>
   </div>
   <div class="large-6 columns">
     <hr class="hide-for-small" />
@@ -135,20 +139,6 @@ blurb: A game to encourage ASL use
   </div>
 </div>
 
-<div class="row">
-  <div class="large-4 columns">
-    <h5>Control Mechanism</h5>
-    <p>
-    The game uses the accelerometer in a smartphone. The player chooses a playing piece via swipe and activates the piece via a double shake.
-    </p>
-  </div>
-  <div class="large-4 columns">
-    <h5>Mechanics, Dynamics, Aesthetics</h5>
-  </div>
-  <div class="large-4 columns">
-    <h5>Learning Scaffold</h5>
-  </div>
-</div>
 
 <div class="row">
   <div class="large-12 columns">
