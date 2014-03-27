@@ -127,13 +127,26 @@ blurb: A game to encourage ASL use
   <div class="large-9 columns">
     <h4>Playtesting</h4>
     <p>
-      I playtested the game in three rounds.
+      I playtested the game in three rounds. My goals were to uncover any problems with the using an uncommon control mechanism, to analyze mechanics, and to improve the learning scaffold.
     </p>
   </div>
   <div class="large-3 columns">
-    <p>
 
+  </div>
+</div>
+
+<div class="row">
+  <div class="large-4 columns">
+    <h5>Control Mechanism</h5>
+    <p>
+    The game uses the accelerometer in a smartphone. The player chooses a playing piece via swipe and activates the piece via a double shake.
     </p>
+  </div>
+  <div class="large-4 columns">
+    <h5>Mechanics, Dynamics, Aesthetics</h5>
+  </div>
+  <div class="large-4 columns">
+    <h5>Learning Scaffold</h5>
   </div>
 </div>
 
