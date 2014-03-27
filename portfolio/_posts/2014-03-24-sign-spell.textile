@@ -50,12 +50,22 @@ blurb: A game to encourage ASL use
   <div class="large-9 columns">
     <h4>Literature Review</h4>
     <p>
-      I began the project with a review of recent research of leanring sign language as a second language.
+      I began the project with a review of recent research in sign language instructional design and learning sign language as a second language.
+    </p>
+    <p>
+      I found that there is a gap in learning solutions for hearing family members, and, most importantly, parents. 95% of deaf people have one or more hearing parents[1].
+    </p>
+    <p>
+      There are products and college courses for interpreters, but these don't consider the stressors new parents face, or solutions for families as a whole.
     </p>
   </div>
   <div class="large-3 columns">
+    <blockquote>
+      Less than five percent of deaf children have at least one deaf parent.
+      <cite>Mitchell, Karchmer</cite>
+    </blockquote>
     <p>
-
+      <a class="button [tiny small large]" href="{{ site.baseurl }}/portfolio/assets/sign_spell/printables/signspell_literature_review.pdf">Read the Lit Review</a>
     </p>
   </div>
 </div>
@@ -64,7 +74,14 @@ blurb: A game to encourage ASL use
   <div class="large-9 columns">
     <h4>Non-digital Game Design</h4>
     <p>
-      I like to
+      Creating a game first without the consideration of technology enables the designer to focus on quality game mechanics.
+      It is easy to become overwhelmed by technical decisions and, sometimes, limitations.
+    </p>
+    <p>
+      I created a table-top card game, Sign Shift, to focus on game mechanics. In this game, I focused on replacing hand position and palm orientation with cards.
+    </p>
+    <p>
+      The game requires preliminary knowledge of sign language. So, the next logical step in brainstorming a digital game was to incorporate a mechanic which allowed for learning new signs.
     </p>
   </div>
   <div class="large-3 columns">
@@ -81,8 +98,12 @@ blurb: A game to encourage ASL use
 
   </div>
   <div class="large-6 columns">
+    <hr class="hide-for-small" />
     <p>
-
+      After much brainstorming, I wanted to add more opportunities for fun dynamics in the game.
+    </p>
+    <p>
+      Sign Spell doesn't resemble non-digital version. The only likeness comes from the realization that hand signs can be successfully replaced with game elements like cards or controllers.
     </p>
   </div>
 </div>
@@ -95,9 +116,33 @@ blurb: A game to encourage ASL use
     </div>
   </div>
   <div class="large-6 columns">
+    <hr class="hide-for-small" />
     <p>
+      I created a prototype using Node.js and Socket.io to quickly get to a point where I could playtest.
     </p>
   </div>
+</div>
+
+<div class="row">
+  <div class="large-9 columns">
+    <h4>Playtesting</h4>
+    <p>
+      I playtested the game in three rounds.
+    </p>
+  </div>
+  <div class="large-3 columns">
+    <p>
+
+    </p>
+  </div>
+</div>
+
+<div class="row">
+  <div class="large-12 columns">
+    <small>
+fn1. Mitchell, R. E., & Karchmer, M. A. (2004). Chasing the mythical ten percent: Parental hearing status of deaf and hard of hearing students in the United States. Sign Language Studies, 4(2), 138–163.
+</small>
+</div>
 </div>
 
 <hr />
