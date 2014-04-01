@@ -60,7 +60,7 @@ body {
 
 /* line 348, ../bower_components/foundation/scss/foundation/components/_global.scss */
 body {
-  background: #eeeeee url("../images/background_1920x20.png") repeat-y;
+  background: #eeeeee;
   color: #222222;
   padding: 0;
   margin: 0;
@@ -7272,7 +7272,7 @@ meta.foundation-mq-topbar {
   width: 100%;
   height: auto;
   display: block;
-  background: white;
+  background: #333333;
   font-size: 16px;
   margin: 0;
 }
@@ -7295,7 +7295,7 @@ meta.foundation-mq-topbar {
   font-size: 0.8125rem;
   font-weight: normal;
   text-transform: none;
-  background: white;
+  background: #333333;
 }
 /* line 321, ../bower_components/foundation/scss/foundation/components/_top-bar.scss */
 .top-bar-section ul li > a.button {
@@ -7600,7 +7600,7 @@ meta.foundation-mq-topbar {
   }
   /* line 563, ../bower_components/foundation/scss/foundation/components/_top-bar.scss */
   .top-bar-section .dropdown li a {
-    color: #333333;
+    color: white;
     line-height: 1;
     white-space: nowrap;
     padding: 12px 33.33333px;
@@ -9524,23 +9524,23 @@ th.hide-for-touch {
   display: table-cell !important;
 }
 
-/* line 1, ../scss/_custom.scss */
+/* line 3, ../scss/_custom.scss */
 #logo img {
   margin-top: auto;
   margin-bottom: auto;
 }
 
-/* line 5, ../scss/_custom.scss */
+/* line 7, ../scss/_custom.scss */
 .wrap {
   min-height: 100%;
 }
 
-/* line 9, ../scss/_custom.scss */
+/* line 11, ../scss/_custom.scss */
 #main-content {
   padding-bottom: 180px;
 }
 
-/* line 13, ../scss/_custom.scss */
+/* line 15, ../scss/_custom.scss */
 .skill-label {
   font-weight: normal;
   font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
@@ -9557,7 +9557,7 @@ th.hide-for-touch {
   color: white;
 }
 
-/* line 20, ../scss/_custom.scss */
+/* line 22, ../scss/_custom.scss */
 .portfolio-panel {
   border-style: solid;
   border-width: 1px;
@@ -9575,20 +9575,20 @@ th.hide-for-touch {
   margin-bottom: 0;
 }
 
-/* line 34, ../scss/_custom.scss */
+/* line 36, ../scss/_custom.scss */
 .portfolio_th:hover {
   -webkit-box-shadow: 0 0 6px 1px rgba(228, 108, 84, 0.5);
   box-shadow: 0 0 6px 1px rgba(228, 108, 84, 0.5);
 }
 
-/* line 39, ../scss/_custom.scss */
+/* line 41, ../scss/_custom.scss */
 .portfolio_th {
   -webkit-transition: all 200ms ease-out;
   -moz-transition: all 200ms ease-out;
   transition: all 200ms ease-out;
 }
 
-/* line 45, ../scss/_custom.scss */
+/* line 47, ../scss/_custom.scss */
 #footer {
   background: #ffffff;
   border-top: 1px solid #ddd;
@@ -9597,4 +9597,29 @@ th.hide-for-touch {
   margin-top: -180px;
   /* negative value of footer height */
   height: 180px;
+}
+
+/* line 56, ../scss/_custom.scss */
+.top-bar, .top-bar *, #logo img {
+  -webkit-transition-duration: 0.5s;
+  -moz-transition-duration: 0.5s;
+  -o-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+}
+
+/* line 63, ../scss/_custom.scss */
+.top-bar.alt {
+  background-color: #dddddd;
+  height: 80px;
+  line-height: 80px;
+}
+
+/* line 69, ../scss/_custom.scss */
+.alt .top-bar-section {
+  margin-top: 80px;
+}
+
+/* line 73, ../scss/_custom.scss */
+.alt #logo img {
+  height: 80%;
 }
