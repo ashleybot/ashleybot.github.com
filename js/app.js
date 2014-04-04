@@ -4,8 +4,8 @@ $(document).foundation();
 
 $(window).scroll(function(){
   if($(window).scrollTop() <= 40){
-    $('#nav').removeClass('alt');
+    $('.top-bar').removeClass('alt');
   }else{
-    $('#nav').addClass('alt');
+    $('.top-bar').addClass('alt');
   }
 });

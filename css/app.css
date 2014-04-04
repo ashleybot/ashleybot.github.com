@@ -7188,7 +7188,7 @@ meta.foundation-mq-topbar {
 /* line 188, ../bower_components/foundation/scss/foundation/components/_top-bar.scss */
 .top-bar .name h1 a {
   font-weight: normal;
-  color: #333333;
+  color: white;
   width: 50%;
   display: block;
   padding: 0 33.33333px;
@@ -7201,7 +7201,7 @@ meta.foundation-mq-topbar {
 }
 /* line 204, ../bower_components/foundation/scss/foundation/components/_top-bar.scss */
 .top-bar .toggle-topbar a {
-  color: #333333;
+  color: white;
   text-transform: uppercase;
   font-size: 0.8125rem;
   font-weight: bold;
@@ -7224,7 +7224,7 @@ meta.foundation-mq-topbar {
   line-height: 33px;
   padding: 0;
   padding-right: 25px;
-  color: #333333;
+  color: white;
   position: relative;
 }
 /* line 234, ../bower_components/foundation/scss/foundation/components/_top-bar.scss */
@@ -7236,8 +7236,8 @@ meta.foundation-mq-topbar {
   width: 16px;
   top: 0;
   height: 0;
-  -webkit-box-shadow: 1px 10px 1px 1px #333333, 1px 16px 1px 1px #333333, 1px 22px 1px 1px #333333;
-  box-shadow: 0 10px 0 1px #333333, 0 16px 0 1px #333333, 0 22px 0 1px #333333;
+  -webkit-box-shadow: 1px 10px 1px 1px white, 1px 16px 1px 1px white, 1px 22px 1px 1px white;
+  box-shadow: 0 10px 0 1px white, 0 16px 0 1px white, 0 22px 0 1px white;
 }
 /* line 257, ../bower_components/foundation/scss/foundation/components/_top-bar.scss */
 .top-bar.expanded {
@@ -7288,7 +7288,7 @@ meta.foundation-mq-topbar {
 .top-bar-section ul li > a {
   display: block;
   width: 100%;
-  color: #333333;
+  color: white;
   padding: 12px 0 12px 0;
   padding-left: 33.33333px;
   font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
@@ -7422,7 +7422,7 @@ meta.foundation-mq-topbar {
 }
 /* line 421, ../bower_components/foundation/scss/foundation/components/_top-bar.scss */
 .top-bar-section .dropdown li.title h5 a {
-  color: #333333;
+  color: white;
   line-height: 50px;
   display: block;
 }
@@ -8924,7 +8924,7 @@ blockquote p {
   display: block;
   line-height: 2.0625rem;
   padding: 0;
-  color: #333333;
+  color: white;
   position: relative;
 }
 /* line 283, ../bower_components/foundation/scss/foundation/components/_offcanvas.scss */
@@ -9525,22 +9525,16 @@ th.hide-for-touch {
 }
 
 /* line 3, ../scss/_custom.scss */
-#logo img {
-  margin-top: auto;
-  margin-bottom: auto;
-}
-
-/* line 7, ../scss/_custom.scss */
 .wrap {
   min-height: 100%;
 }
 
-/* line 11, ../scss/_custom.scss */
+/* line 7, ../scss/_custom.scss */
 #main-content {
   padding-bottom: 180px;
 }
 
-/* line 15, ../scss/_custom.scss */
+/* line 11, ../scss/_custom.scss */
 .skill-label {
   font-weight: normal;
   font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
@@ -9557,7 +9551,7 @@ th.hide-for-touch {
   color: white;
 }
 
-/* line 22, ../scss/_custom.scss */
+/* line 18, ../scss/_custom.scss */
 .portfolio-panel {
   border-style: solid;
   border-width: 1px;
@@ -9575,20 +9569,20 @@ th.hide-for-touch {
   margin-bottom: 0;
 }
 
-/* line 36, ../scss/_custom.scss */
+/* line 32, ../scss/_custom.scss */
 .portfolio_th:hover {
   -webkit-box-shadow: 0 0 6px 1px rgba(228, 108, 84, 0.5);
   box-shadow: 0 0 6px 1px rgba(228, 108, 84, 0.5);
 }
 
-/* line 41, ../scss/_custom.scss */
+/* line 37, ../scss/_custom.scss */
 .portfolio_th {
   -webkit-transition: all 200ms ease-out;
   -moz-transition: all 200ms ease-out;
   transition: all 200ms ease-out;
 }
 
-/* line 47, ../scss/_custom.scss */
+/* line 43, ../scss/_custom.scss */
 #footer {
   background: #ffffff;
   border-top: 1px solid #ddd;
@@ -9599,16 +9593,9 @@ th.hide-for-touch {
   height: 180px;
 }
 
-/* line 56, ../scss/_custom.scss */
-#nav, .top-bar, .top-bar * {
-  -webkit-transition-duration: 0.5s;
-  -moz-transition-duration: 0.5s;
-  -o-transition-duration: 0.5s;
-  transition-duration: 0.5s;
-}
-
-/* line 62, ../scss/_custom.scss */
-#nav.alt, .top-bar, .top-bar * {
-  height: 80px;
-  line-height: 80px;
+/* line 52, ../scss/_custom.scss */
+#logo a {
+  color: #fff;
+  font-family: 'Arvo', serif;
+  font-size: 2.75rem;
 }
