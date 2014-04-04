@@ -1,4 +1,5 @@
 me:
   gravatar: fd5460bdc6504b7ba0f46b3512f4f36e
-baseurl: 
+baseurl:
 exclude: ['scss']
+markdown: kramdown
