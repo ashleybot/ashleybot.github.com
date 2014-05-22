@@ -8,3 +8,4 @@ scss/
 node_modules/
 Gruntfile.js
 package.json
+bower_components/
