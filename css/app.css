@@ -9576,12 +9576,12 @@ th.hide-for-touch {
 }
 
 /* line 38, ../scss/_custom.scss */
-.portfolio_th:hover h5 {
+.portfolio_th:hover h5, .portfolio_th:hover h6.subheader, .portfolio_th:hover p {
   color: #fff;
 }
 
 /* line 42, ../scss/_custom.scss */
-.portfolio_th, .porfolio_panel {
+.portfolio_th, .porfolio-panel {
   -webkit-transition: all 200ms ease-out;
   -moz-transition: all 200ms ease-out;
   transition: all 200ms ease-out;
