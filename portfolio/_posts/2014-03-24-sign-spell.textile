@@ -5,7 +5,7 @@ description: Sign Spell by Ashley Wilson, a usability advocate and programmer in
 keywords: portfolio,ashley,wilson,ashleywilson,ashleygreerwilson,lexington,kentucky,ky
 permalink: /portfolio/sign-spell.html
 tags:
-thumbnail: /portfolio/assets/sign_spell/images/sign_spell_thumbnail_large.png
+thumbnail: /sign_spell/images/sign_spell_thumbnail_large.png
 blurb: A game to encourage ASL use
 ---
 
@@ -19,12 +19,12 @@ blurb: A game to encourage ASL use
 <div class="row">
   <div class="large-6 columns">
     <p>
-      <img src="{{ site.baseurl }}/portfolio/assets/sign_spell/images/sign_spell_thumbnail_large.png" alt="Players testing Sign Spell" />
+      <img src="{{ site.assets }}/sign_spell/images/sign_spell_thumbnail_large.png" alt="Players testing Sign Spell" />
     </p>
   </div>
   <div class="large-6 columns">
     <p>
-      <img src="{{ site.baseurl }}/portfolio/assets/sign_spell/images/sign_spell_playtesting.png" alt="Players testing Sign Spell" />
+      <img src="{{ site.assets }}/sign_spell/images/sign_spell_playtesting.png" alt="Players testing Sign Spell" />
     </p>
   </div>
 </div>
@@ -68,7 +68,7 @@ blurb: A game to encourage ASL use
       <cite>Mitchell, Karchmer</cite>
     </blockquote>
     <p>
-      <a class="button [tiny small large]" href="{{ site.baseurl }}/portfolio/assets/sign_spell/printables/signspell_literature_review.pdf">Read the Lit Review</a>
+      <a class="button [tiny small large]" href="{{ site.assets }}/sign_spell/printables/signspell_literature_review.pdf">Read the Lit Review</a>
     </p>
   </div>
 </div>
@@ -98,7 +98,7 @@ blurb: A game to encourage ASL use
   <div class="large-6 columns">
     <h4>Brainstorming</h4>
     <p>
-      <img src="{{ site.baseurl }}/portfolio/assets/sign_spell/images/sign_spell_sketch.jpg" alt="Sign Spell Initial Sketch" />
+      <img src="{{ site.assets }}/sign_spell/images/sign_spell_sketch.jpg" alt="Sign Spell Initial Sketch" />
     </p>
   </div>
   <div class="large-6 columns">

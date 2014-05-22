@@ -9559,6 +9559,7 @@ th.hide-for-touch {
   margin-bottom: 1.25rem;
   padding: 1.25rem;
   background: #fafdfc;
+  border: 1px solid rgba(228, 108, 84, 0.5);
 }
 /* line 52, ../bower_components/foundation/scss/foundation/components/_panels.scss */
 .portfolio-panel > :first-child {
@@ -9570,19 +9571,23 @@ th.hide-for-touch {
 }
 
 /* line 32, ../scss/_custom.scss */
-.portfolio_th:hover {
-  -webkit-box-shadow: 0 0 6px 1px rgba(228, 108, 84, 0.5);
-  box-shadow: 0 0 6px 1px rgba(228, 108, 84, 0.5);
+.portfolio_th:hover, .portfolio_th:hover .portfolio-panel {
+  background-color: #e46c54;
 }
 
-/* line 37, ../scss/_custom.scss */
-.portfolio_th {
+/* line 38, ../scss/_custom.scss */
+.portfolio_th:hover h5 {
+  color: #fff;
+}
+
+/* line 42, ../scss/_custom.scss */
+.portfolio_th, .porfolio_panel {
   -webkit-transition: all 200ms ease-out;
   -moz-transition: all 200ms ease-out;
   transition: all 200ms ease-out;
 }
 
-/* line 43, ../scss/_custom.scss */
+/* line 48, ../scss/_custom.scss */
 #footer {
   background: #ffffff;
   border-top: 1px solid #ddd;
@@ -9593,7 +9598,7 @@ th.hide-for-touch {
   height: 180px;
 }
 
-/* line 52, ../scss/_custom.scss */
+/* line 57, ../scss/_custom.scss */
 #logo a {
   color: #fff;
   font-family: 'Arvo', serif;

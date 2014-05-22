@@ -3,3 +3,4 @@ me:
 baseurl:
 exclude: ['scss']
 markdown: kramdown
+assets: https://s3.amazonaws.com/ashleybot/portfolio_assets
